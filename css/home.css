@@ -71,7 +71,7 @@ h2{
 h3{
     color: black;
    font-family: Arial, Helvetica, sans-serif;
-   display: none;
+   
   
 }
 img{
@@ -81,27 +81,43 @@ img{
 .lista{
     display: flex;
     flex-direction: column;
-
+    
     text-align: center;
     background-color: rgb(252, 170, 17);
 
-    size: 500px;
+    
 }
 .imgl{
-    width: 40%;
+    width: 50%;
 }
 .productos p{
     font-family: Arial, Helvetica, sans-serif;
     size: 5px;
-   display: none;
+   
 }
 
 .productos{
     display: flex;
-    flex-wrap: wrap;
-    
+   flex-wrap: wrap;
+}
+.producto{
+   width: 50%;
+   padding: 10px;
 }
 
+footer{
+    background-color:rgb(46, 46, 46);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: auto;
+   
+}
 
+.derechos{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
 
-
+}
+.derechos ul li a:hover{
+    color: coral;}
