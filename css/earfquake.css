@@ -102,6 +102,10 @@ h2{
 .by{
     margin-top: 20px;
 }
+
+.by a:hover{
+    color:rgb(46, 46, 46);
+}
 p{
     margin: 5px;
     text-align: center;
