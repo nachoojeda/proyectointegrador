@@ -30,6 +30,20 @@ ul,li,a{
    
 }
 
+.tracklist nav{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    text-align: start;
+    justify-content: start;
+    height: 20%;
+    width: 100%;
+    background-color: hsl(350, 75%, 81%, 0.3);
+    margin: 1%;
+    
+}
+
+
 .header figure{
     margin: 8px;
 }

@@ -19,17 +19,9 @@ ul,li,a{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.header{
-    background-color:rgb(46, 46, 46);
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   width: auto;
-   height: 60px;
-
-   
+.tracklist{
+    width: 100%;
 }
-
 .tracklist nav{
     display: flex;
     flex-wrap: wrap;
@@ -40,6 +32,18 @@ ul,li,a{
     width: 100%;
     background-color: hsl(350, 75%, 81%, 0.3);
     margin: 1%;
+    
+}
+
+.header{
+    background-color:rgb(46, 46, 46);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: auto;
+   height: 60px;
+
+   
 }
 
 .header figure{
@@ -71,7 +75,7 @@ img{
     width: 100%;
 }
 .imagenmac{
-    background-image: url(https://lh3.googleusercontent.com/proxy/B6-9iPQV5Molrq0eLXYC_kLVl1zFFu_ukwi75OBsH-wW61SR3GmrE88VW2uGBqZD7FnOt2i46VFUPjYIApHjZyPMPnxUXM_rUKT4UV7VUKWueaqB1kVP7DZdHUrX2hNoU6VQGQ);
+    background-image: url(https://images-na.ssl-images-amazon.com/images/I/71udX8iRBsL._SL1200_.jpg);
     
     width: 70%;
     height: 50%;
