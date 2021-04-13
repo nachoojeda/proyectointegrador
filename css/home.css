@@ -8,6 +8,27 @@ body{
     
 }
 
+.titulo{
+    text-align: center;
+    color: white;
+    background-color: rgb(250, 165, 179);
+    font-size: 60px;
+    margin: 30px;
+}
+
+.imagenfondo h1{
+    
+    color: white;
+    position: absolute;
+    font-size: 250px;
+    width: 100%;
+    margin-top: 350px;
+    text-align: center;
+
+    
+}
+
+
 p{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -142,13 +163,6 @@ img{
 }
 
 
-
-.carta3 img{ border: solid 20px white; 
-    width: 60%;
-    
-
-}
-
 .producto a:hover{
     color: white;
 }
@@ -185,7 +199,15 @@ footer{
 
    @media(min-width: 768px){
 
-
+    .titulo{
+        text-align: center;
+        color: white;
+        background-color: rgb(250, 165, 179);
+        font-size: 60px;
+        margin: 30px;
+        display: none;
+    }
+    
     
     .producto{
         width: 50%;
@@ -198,6 +220,20 @@ footer{
         height: 50%;
         display: flex;
         justify-content: center;
+        
+    }
+
+   
+    
+    .imagenfondo2 h1{
+        
+        color: rgb(253, 222, 227);
+        position: absolute;
+        font-size: 100px;
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+    
         
     }
 
@@ -231,6 +267,7 @@ footer{
    align-items: center;
    width: auto;
    
+   
 
    
 }
@@ -249,13 +286,21 @@ ul li a:hover{
        flex-direction: column;
        align-items: center;
        width: auto;
-       height: 80px;
+       height: 55px;
        font-family: Arial, Helvetica, sans-serif;
        
     }
 
     
-   
+    .titulo{
+        text-align: center;
+        color: white;
+        background-color: rgb(250, 165, 179);
+        font-size: 60px;
+        margin: 30px;
+        display: none;
+    }
+    
     
        
     .imagenfondo2{
