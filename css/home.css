@@ -4,12 +4,18 @@
     padding: 0%;
 }
 body{
-    background-color: rgb(255, 181, 43);
+    background-color:  hsl(350, 75%, 81%, 0.3);
+    
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
 }
 ul,li,a{
     list-style-type: none;
     text-decoration:none;
-    padding:0
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 h2{
     text-align: center;
@@ -20,9 +26,13 @@ h2{
    flex-direction: column;
    align-items: center;
    width: auto;
-   
+   height: 60px;
 
    
+}
+
+.header figure{
+    margin: 8px;
 }
 .opciones li a {
     color:white;
@@ -41,12 +51,12 @@ ul li a:hover{
 
 }
 .logo{
-    color: rgb(255, 181, 43);
+    color:  hsl(350, 75%, 81%, 0.8);
     margin: 5%;
     size: 20%;
 }
 .imagenfondo{
-    background-image: url('https://cdn.pixabay.com/photo/2015/07/30/17/24/audience-868074_1280.jpg');
+    background-image: url('../img/concert.jpeg');
     width: 100%;
     height: 50%;
     display: flex;
@@ -65,12 +75,20 @@ ul li a:hover{
 h2{
     color: white;
    font-family: Arial, Helvetica, sans-serif;
-   background-color: rgb(31, 31, 31)
+   background-color: rgb(31, 31, 31, 0.94);
+   height: 90px;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+
    
 }
-h3{
-    color: black;
+h3 a:hover{
+    color: white;
    font-family: Arial, Helvetica, sans-serif;
+   
    
   
 }
@@ -83,7 +101,8 @@ img{
     flex-direction: column;
     
     text-align: center;
-    background-color: rgb(252, 170, 17);
+    background-color: hsl(350, 75%, 81%, 0.8);
+    
 
     
 }
@@ -101,16 +120,20 @@ img{
    flex-wrap: wrap;
 }
 .producto{
-   width: 50%;
-   padding: 10px;
+   width: 100%;
+   padding: 20px;
 }
-
+.producto a:hover{
+    color: white;
+}
 footer{
     background-color:rgb(46, 46, 46);
    display: flex;
    flex-direction: column;
    align-items: center;
    width: auto;
+   height: 50px;
+   font-family: Arial, Helvetica, sans-serif;
    
 }
 
@@ -121,3 +144,132 @@ footer{
 }
 .derechos ul li a:hover{
     color: coral;}
+
+   .producto h3{
+      
+   }
+
+   .imagenfondo2{
+    background-image: url('https://cdn.pixabay.com/photo/2016/09/04/18/28/party-people-1644797_1280.jpg');
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+   @media(min-width: 768px){
+
+
+    
+    .producto{
+        width: 50%;
+        padding: 20px;
+     }
+
+     .imagenfondo2{
+        background-image: url('../img/concert.jpeg');
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    h2{
+        color: white;
+       font-family: Arial, Helvetica, sans-serif;
+       background-color: rgb(31, 31, 31, 0.94);
+       height: 60px;
+       text-align: center;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    
+    
+   }
+
+   footer{
+    background-color:rgb(46, 46, 46);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: auto;
+   height: 40px;
+   
+}
+
+.header{
+    background-color:rgb(46, 46, 46);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: auto;
+   
+
+   
+}
+
+ul li a:hover{
+    color: coral;
+    size: 33%;
+}
+   }
+
+   @media(min-width: 1024px){
+
+    .header{
+        background-color:rgb(46, 46, 46);
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       width: auto;
+       height: 80px;
+       font-family: Arial, Helvetica, sans-serif;
+       
+    }
+
+    
+   
+    
+       
+    .imagenfondo2{
+        background-image: url('https://cdn.pixabay.com/photo/2016/09/04/18/28/party-people-1644797_1280.jpg');
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        display: none;
+    }
+    .imagenfondo{
+        background-image: url('../img/concert.jpeg');
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+       
+        
+       
+    }
+    h2{
+        color: white;
+       font-family: Arial, Helvetica, sans-serif;
+       background-color: rgb(31, 31, 31, 0.94);
+       height: 60px;
+       text-align: center;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .producto{
+    width: 30%;
+    padding: 20px;
+ }
+
+ .productos{
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+}
