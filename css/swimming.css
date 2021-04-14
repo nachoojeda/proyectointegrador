@@ -29,6 +29,13 @@ ul,li,a{
 
    
 }
+.tracklist{
+    width: 50%;
+    height: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
 
 .tracklist nav{
     display: flex;

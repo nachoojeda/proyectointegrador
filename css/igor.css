@@ -19,9 +19,16 @@ ul,li,a{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.tracklist{
-    width: 100%;
-}
+
+    .tracklist{
+        width: 50%;
+        height: 10%;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    
+
 .tracklist nav{
     display: flex;
     flex-wrap: wrap;
