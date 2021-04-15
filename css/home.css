@@ -7,14 +7,55 @@ body{
     background-color:  hsl(350, 75%, 81%, 0.3);
     
 }
+.headeri{
+    background-color:rgb(46, 46, 46);
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   width: auto;
+   height: 45px;
+
+   
+}
+.h1h{
+    font-size: 20px;
+    color: white;
+    margin-left: 10px;
+    
+    
+}
+
+.h1h a:link{
+    color: white;
+}
+.h1h a:visited{
+    color: white;
+}
+.titulo h1{
+    text-align: center;
+    color: rgb(46, 46, 46);
+    position: absolute;
+    font-size: 60px;
+    margin: 20%;
+    
+}
 
 .titulo{
-    text-align: center;
-    color: white;
-    background-color: rgb(250, 165, 179);
-    font-size: 60px;
-    margin: 30px;
+    background-image: url('../vid/Live\ music\ concert.mp4');
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    display: none;
+    
 }
+
+
+video{
+    width: 100%;
+}
+
 
 .imagenfondo h1{
     
@@ -44,10 +85,12 @@ h2{
 .header{
     background-color:rgb(46, 46, 46);
    display: flex;
-   flex-direction: column;
+   flex-direction: row;
+   justify-content: space-between;
    align-items: center;
    width: auto;
-   height: 60px;
+   height: 45px;
+   display: none;
 
    
 }
@@ -68,6 +111,7 @@ ul li a:hover{
     justify-content: space-around;
     width: 100%;
     align-items: center;
+    font-size: 10px;
     
 
 }
@@ -77,22 +121,25 @@ ul li a:hover{
     size: 20%;
 }
 .imagenfondo{
-    background-image: url('../img/concert.jpeg');
+    background-image: url('../vid/Live\ music\ concert.mp4');
     width: 100%;
     height: 50%;
     display: flex;
     justify-content: center;
     display: none;
 }
+video{
+    width: 100%;
+}
 
 .listas{
     display: flex;
     flex-direction: column;
-    
 
-    
 
 }
+
+
 h2{
     color: white;
    font-family: Arial, Helvetica, sans-serif;
@@ -102,9 +149,11 @@ h2{
    display: flex;
    justify-content: center;
    align-items: center;
-
-
    
+}
+
+.nli{
+    height: 55px;
 }
 h3 a:hover{
     color: white;
@@ -227,12 +276,13 @@ footer{
     
     .imagenfondo2 h1{
         
-        color: rgb(253, 222, 227);
+        color: white;
         position: absolute;
         font-size: 100px;
         width: 100%;
-        margin-top: 20px;
+        margin-top: 23%;
         text-align: center;
+        font-size: 130px;
     
         
     }
@@ -266,15 +316,20 @@ footer{
    flex-direction: column;
    align-items: center;
    width: auto;
-   
+   height: 60px
+
    
 
    
 }
 
+
 ul li a:hover{
     color: coral;
     size: 33%;
+}
+.headeri{
+    display: none;
 }
    }
 
@@ -290,6 +345,17 @@ ul li a:hover{
        font-family: Arial, Helvetica, sans-serif;
        
     }
+
+        footer{
+            background-color:rgb(46, 46, 46);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        height: 45px;
+        font-family: Arial, Helvetica, sans-serif;
+        
+        }
 
     
     .titulo{
@@ -317,9 +383,22 @@ ul li a:hover{
         height: 50%;
         display: flex;
         justify-content: center;
+        align-items: center;
        
         
        
+    }
+
+    .imagenfondo h1{
+        
+        color: white;
+        position: absolute;
+        width: 100%;
+        margin-top: 0%;
+        text-align: center;
+        font-size: 190px;
+    
+        
     }
     h2{
         color: white;
@@ -341,5 +420,9 @@ ul li a:hover{
     display: flex;
    flex-wrap: wrap;
    justify-content: space-around;
+}
+
+.headeri{
+    display: none;
 }
 }

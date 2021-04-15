@@ -30,6 +30,14 @@ ul,li,a{
    
 }
 
+.tracklist{
+    width: 50%;
+    height: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
 .tracklist nav{
     display: flex;
     flex-wrap: wrap;
@@ -71,7 +79,7 @@ img{
     width: 100%;
 }
 .imagenmac{
-    background-image: url(https://lh3.googleusercontent.com/proxy/B6-9iPQV5Molrq0eLXYC_kLVl1zFFu_ukwi75OBsH-wW61SR3GmrE88VW2uGBqZD7FnOt2i46VFUPjYIApHjZyPMPnxUXM_rUKT4UV7VUKWueaqB1kVP7DZdHUrX2hNoU6VQGQ);
+    background-image: url(https://http2.mlstatic.com/D_NQ_NP_880387-MLA29922705740_042019-O.jpg);
     
     width: 70%;
     height: 50%;
