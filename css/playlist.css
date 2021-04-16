@@ -15,6 +15,7 @@
 }
 .opciones li a {
     color:white;
+    font-size: 15px;
     
 }
 ul li a:hover{
@@ -48,10 +49,14 @@ h2{
 
 
 }
+body{
+    background-color: black;
+}
 
 .Canciones{
     font-size: 25px;
-    color: white;
+    color: green;
     background-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     
 }
