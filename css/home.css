@@ -7,17 +7,7 @@ body{
     background-color:  hsl(350, 75%, 81%, 0.3);
     
 }
-.headeri{
-    background-color:rgb(46, 46, 46);
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   align-items: center;
-   width: auto;
-   height: 45px;
 
-   
-}
 .h1h{
     font-size: 20px;
     color: white;
