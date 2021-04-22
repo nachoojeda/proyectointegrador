@@ -106,7 +106,6 @@ h2{
     display: flex;
     flex-direction: column;
     text-align: center;
-   
 }
 
 .carta{
@@ -126,11 +125,19 @@ footer{
    display: flex;
    flex-direction: row;
    align-items: center;
+   justify-content: space-between;
    height: 45px;
    font-family: Arial, Helvetica, sans-serif;
 }
 
+.columna{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 footer h6{
+    text-align: center;
+    color:hsl(350, 75%, 81%, 0.8);
     display: none;
 }
 
@@ -191,6 +198,7 @@ footer h6{
    width: auto;
    height: 50px;
 }
+
 }
 
 
@@ -222,37 +230,20 @@ footer h6{
        
     }
 
-<<<<<<< HEAD
         footer{
         background-color:rgb(46, 46, 46);
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         width: auto;
         height: 45px;
         font-family: Arial, Helvetica, sans-serif;
         
         }
-=======
-    footer{
-        background-color:rgb(46, 46, 46);
-       display: flex;
-       flex-direction: row;
-       align-items: center;
-       width: auto;
-       height: 50px;
-       font-family: Arial, Helvetica, sans-serif;
-    }
-    
-    
-    footer figure{
-        margin: 8px;
-    }
->>>>>>> 61ccc8f16bad00a4d139e3a837d4ea9dc93b46db
 
     
     .imagenfondoP{
-        display: none;
+       display: none;
     }
     
 
@@ -267,7 +258,10 @@ footer h6{
     video{
         width: 100%;
     }
-
+ 
+    footer h6{
+        display: block;
+    }
     .imagenfondo h1{
         color: white;
         position: absolute;
