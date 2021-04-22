@@ -63,9 +63,12 @@ img{
 .imagenmac{
     background-image: url(https://is2-ssl.mzstatic.com/image/thumb/Music124/v4/e3/38/b5/e338b529-da3f-b4b9-b8f9-1fae428e7a23/093624905899.jpg/1200x1200bf-60.jpg);
     
-    
-  
-    
+    width: 30%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
     
     border: solid 20px white; 
     width: 60%;
@@ -91,14 +94,20 @@ img{
     padding: 10px;
     
 }
-
-.parrafo h1{
+h1{
+    text-align: center;
     color: white;
-    font-size: 70px;
+    font-size: 600%;
 }
+
+
 h2{
     color: white;
     text-align: center;
+    
+        font-size: 30px;
+        margin-bottom: 10px;
+        
     
 }
 
@@ -168,14 +177,8 @@ footer h6{
 }
 
 
-h1{
-    font-size: 50px;
-}
 
-h2{
-    font-size: 30px;
-    
-}
+
 @media(min-width: 768px){
 
     .opciones li a{
@@ -193,6 +196,7 @@ h2{
         justify-content: center;
         align-items: center;
         margin: 80px;
+        margin-bottom: 15px;
     }
     
     p{
@@ -208,12 +212,7 @@ h2{
         font-family: Arial, Helvetica, sans-serif;
         
         }
-        h1{
-            font-size: 100px;
-
-            
-            
-        }
+        
         h2{
             font-size: 40px;
         }

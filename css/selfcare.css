@@ -126,7 +126,8 @@ img{
 
 h1{
     color: white;
-    font-size: 70px;
+    font-size: 500%;
+    text-align: center;
 }
 h2{
     color: white;
@@ -158,10 +159,11 @@ p{
     font-size: 20px;
 }
     
-
 h1{
-    font-size: 120px;
+    font-size: 800%;
 }
+
+
 
 h2{
     font-size: 30px;
@@ -177,6 +179,7 @@ h2{
         justify-content: center;
         align-items: center;
         margin: 80px;
+        margin-bottom: 15px;
     }
     
     p{
@@ -193,13 +196,11 @@ h2{
         
         }
 
- 
         h1{
-            font-size: 150px;
-
-            
-            
+            font-size: 800%;
         }
+        
+        
         h2{
             font-size: 40px;
         }
@@ -209,8 +210,8 @@ h2{
            flex-direction: column;
            align-items: center;
            width: auto;
-           height: 55px;
-        
+           height: 85px;
+        justify-content: space-around;
            
         }
 }

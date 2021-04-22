@@ -79,7 +79,7 @@ img{
 
 h1{
     color: white;
-    font-size: 70px;
+    font-size: 800%;
 }
 h2{
     color: white;
@@ -170,9 +170,6 @@ footer h6{
     
 
 
-h1{
-    font-size: 120px;
-}
 
 h2{
     font-size: 30px;
@@ -190,6 +187,7 @@ h2{
         justify-content: center;
         align-items: center;
         margin: 80px;
+        margin-bottom: 40px;
     }
     
     p{
@@ -206,12 +204,7 @@ h2{
             font-family: Arial, Helvetica, sans-serif;
             
             }
-        h1{
-            font-size: 150px;
-
-            
-            
-        }
+        
         h2{
             font-size: 40px;
         }
