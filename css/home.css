@@ -8,6 +8,9 @@ body{
     background-color:  hsl(350, 75%, 81%, 0.3);
 }
 
+a{
+    color: rgb(46, 46, 46);
+}
 p{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -50,9 +53,7 @@ a:hover{
     color: hsl(350, 75%, 81%, 0.8);
 }
 
-a:visited{
-    color: black;
-}
+
 .opciones li{
     list-style-type: none;
 }

@@ -10,7 +10,9 @@ body{
     
 }
 
-
+a{
+    color: rgb(46, 46, 46);
+}
 
 p{
     font-family: Arial, Helvetica, sans-serif;

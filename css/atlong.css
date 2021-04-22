@@ -10,6 +10,10 @@ body{
     
 }
 
+a{
+    color: rgb(46, 46, 46);
+}
+
 a:hover{
     color: white;
 }
