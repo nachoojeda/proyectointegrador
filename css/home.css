@@ -27,7 +27,17 @@ h1{
 .logo{
     margin: 8px;
     color:  hsl(350, 75%, 81%, 0.8);
+    
 }
+a:hover{
+    transition: .5;
+}
+
+.logo:visited{
+    color: hsl(350, 75%, 81%, 0.8) ;
+}
+
+
 
 .opciones li a{
     text-decoration:none;
@@ -40,6 +50,9 @@ h1{
     color: hsl(350, 75%, 81%, 0.8);
 }
 
+a:visited{
+    color: black;
+}
 .opciones li{
     list-style-type: none;
 }
