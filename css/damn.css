@@ -9,6 +9,10 @@ body{
     
 }
 
+a:hover{
+    color: white;
+}
+
 p{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -121,9 +125,7 @@ h2{
     text-align: center;
     
 }
-.from{
-   
-}
+
 .by{
     margin-top: 20px;
 }
