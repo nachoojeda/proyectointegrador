@@ -16,12 +16,7 @@ a:hover{
 p{
     font-family: Arial, Helvetica, sans-serif;
 }
-ul,li,a{
-    list-style-type: none;
-    text-decoration:none;
-    padding:0;
-    font-family: Arial, Helvetica, sans-serif;
-}
+
 
 .header{
     background-color:rgb(46, 46, 46);
@@ -58,31 +53,12 @@ ul,li,a{
 .header figure{
     margin: 8px;
 }
-.opciones li a {
-    color:white;
-    
-}
-ul li a:hover{
-    color: coral;
-}
-.opciones {
-    display:flex;
-    height: 100%;
-    justify-content: space-around;
-    width: 100%;
-    align-items: center;
-    
 
-}
-.logo{
-    color:  hsl(350, 75%, 81%, 0.8);
-    margin: 5%;
-    size: 20%;
-}
 
 img{
     width: 100%;
 }
+
 .imagenmac{
     background-image: url(https://www.show.news/__export/1579296657541/sites/debate/img/2020/01/17/39989418_237334646964647_1486397703972483327_n_crop1579296619810.jpg_423682103.jpg);
     
@@ -118,8 +94,9 @@ img{
     
 }
 
-h1{
+.parrafo h1{
     color: white;
+    font-size: 30px;
 }
 h2{
     color: white;
@@ -139,30 +116,60 @@ p{
     
 }
 
+a{
+    text-decoration: none;
+}
+.opciones li a{
+    text-decoration:none;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+}
+
+.opciones li a:hover{
+    color: hsl(350, 75%, 81%, 0.8);
+}
+
+.opciones li{
+    list-style-type: none;
+}
+
+.opciones {
+    display:flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    font-size: 10px;
+}
+
+
 footer{
     background-color:rgb(46, 46, 46);
    display: flex;
-   flex-direction: column;
+   flex-direction: row;
    align-items: center;
-   width: 100%;
-   height: 55px;
+   justify-content: space-between;
+   height: 45px;
    font-family: Arial, Helvetica, sans-serif;
-   
-   
 }
 
-.derechos{
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-text-align: center;
-margin: 5px;
+.columna{
+    display: flex;
+    flex-direction: column;
 }
-.derechos ul li a:hover{
-    color: coral;}
+footer h6{
+    text-align: center;
+    color:hsl(350, 75%, 81%, 0.8);
+    display: none;
+}
 
-    .opciones{
-        margin: 2px;
-    }
+.logo{
+    color:  hsl(350, 75%, 81%, 0.8);
+    
+    size: 20%;
+    margin: 8px;
+}
+
 
     @media(min-width: 768px){
 
@@ -175,15 +182,14 @@ margin: 5px;
         padding: 20px;
     }
 
-    .derechos{
-        font-family: Arial, Helvetica, sans-serif;
-        color: white;
-    text-align: center;
-    margin: 5px;
+    .opciones li a{
+        font-size: 20px;
     }
-}
+    
+    
 
-h1{
+
+.parrafo h1{
     font-size: 50px;
 }
 
@@ -191,7 +197,10 @@ h2{
     font-size: 30px;
     
 }
+    }
 
+
+    
 @media(min-width: 1024px) {
     .imagenmac{
         background-image: url(https://is4-ssl.mzstatic.com/image/thumb/Music124/v4/6c/8a/9a/6c8a9a17-c0e6-0ad7-3707-f29d822380f0/886444594837.jpg/1200x1200bf-60.jpg);
@@ -207,17 +216,18 @@ h2{
     p{
         padding: 30px;
     }
-        footer{
-            background-color:rgb(46, 46, 46);
-           display: flex;
-           flex-direction: column;
-           align-items: center;
-           width: 100%;
-           height: 40px;
-           font-family: Arial, Helvetica, sans-serif;
-           
+    footer{
+        background-color:rgb(46, 46, 46);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+        height: 45px;
+        font-family: Arial, Helvetica, sans-serif;
+        
         }
-        h1{
+
+       .parrafo h1{
             font-size: 100px;
 
             
