@@ -5,202 +5,118 @@
 }
 body{
     background-color:  hsl(350, 75%, 81%, 0.3);
-    
 }
-
-.h1h{
-    font-size: 20px;
-    color: white;
-    margin-left: 10px;
-    
-    
-}
-
-.h1h a:link{
-    color: white;
-}
-.h1h a:visited{
-    color: white;
-}
-.titulo h1{
-    text-align: center;
-    color: rgb(46, 46, 46);
-    position: absolute;
-    font-size: 60px;
-    margin: 20%;
-    
-}
-
-.titulo{
-    background-image: url('../vid/Live\ music\ concert.mp4');
-    width: 100%;
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    display: none;
-    
-}
-
-
-video{
-    width: 100%;
-}
-
-
-.imagenfondo h1{
-    
-    color: white;
-    position: absolute;
-    font-size: 250px;
-    width: 100%;
-    margin-top: 350px;
-    text-align: center;
-
-    
-}
-
 
 p{
     font-family: Arial, Helvetica, sans-serif;
 }
-ul,li,a{
-    list-style-type: none;
-    text-decoration:none;
-    padding:0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-h2{
-    text-align: center;
-}
+
 .header{
     background-color:rgb(46, 46, 46);
    display: flex;
    flex-direction: row;
    justify-content: space-between;
    align-items: center;
-   width: auto;
+   width: 100%;
    height: 45px;
-   
-
-   
 }
 
-.header figure{
+.logo{
     margin: 8px;
+    color:  hsl(350, 75%, 81%, 0.8);
 }
-.opciones li a {
+
+.opciones li a{
+    text-decoration:none;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
     color:white;
-    
 }
-ul li a:hover{
-    color: coral;
+
+.opciones li a:hover{
+    color: hsl(350, 75%, 81%, 0.8);
 }
+
+.opciones li{
+    list-style-type: none;
+}
+
 .opciones {
     display:flex;
-    height: 100%;
     justify-content: space-around;
     width: 100%;
     align-items: center;
     font-size: 10px;
-    
+}
 
-}
-.logo{
-    color:  hsl(350, 75%, 81%, 0.8);
-    margin: 5%;
-    
-}
 .imagenfondo{
-    background-image: url('../vid/Live\ music\ concert.mp4');
-    width: 100%;
-    height: 50%;
-    display: flex;
-    justify-content: center;
     display: none;
 }
-video{
-    width: 100%;
+
+.imagenfondoP{
+    display: none;
 }
 
 .listas{
     display: flex;
     flex-direction: column;
-
-
 }
-
-
 h2{
+    background-color: rgb(46, 46, 46);
     color: white;
-   font-family: Arial, Helvetica, sans-serif;
-   background-color: rgb(31, 31, 31, 0.94);
-   height: 90px;
-   text-align: center;
-   display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 45px;
+    display: flex;
    justify-content: center;
    align-items: center;
-   
-}
-
-.nli{
-    height: 55px;
-}
-h3 a:hover{
-    color: white;
-   font-family: Arial, Helvetica, sans-serif;
-   
-   
-  
-}
-img{
-    width: 100%;
-    
-}
-.lista{
-    display: flex;
-    flex-direction: column;
-    
-    text-align: center;
-    background-color: hsl(350, 75%, 81%, 0.8);
-    
-
-    
-}
-.imgl{
-    width: 50%;
-    
-}
-.productos p{
-    font-family: Arial, Helvetica, sans-serif;
-    size: 5px;
-   
 }
 
 .productos{
     display: flex;
    flex-wrap: wrap;
 }
+
+.producto p{
+    font-size: 15px;
+}
+
 .producto{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   width: 100%;
-   padding: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+.producto a{
+    text-decoration: none;
+}
+
+.producto h3 a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.producto h3 a:hover{
+    color: white;
+}
+
+.lista{
+    background-color: hsl(350, 75%, 81%, 0.8); 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
    
 }
-.carta{
-    width: 110%;
-    
 
-    
+.carta{
+    width: 45vh;
 }
 
-.carta img{
+.imgl{
     border: solid 20px white; 
     width: 60%;
 }
-
 
 .producto a:hover{
     color: white;
@@ -208,211 +124,151 @@ img{
 footer{
     background-color:rgb(46, 46, 46);
    display: flex;
-   flex-direction: column;
+   flex-direction: row;
    align-items: center;
-   width: auto;
-   height: 50px;
+   height: 45px;
    font-family: Arial, Helvetica, sans-serif;
-   
 }
 
-.derechos{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-
-}
-.derechos ul li a:hover{
-    color: coral;}
-
-   
-
-   .imagenfondo2{
-    background-image: url('https://cdn.pixabay.com/photo/2016/09/04/18/28/party-people-1644797_1280.jpg');
-    width: 100%;
-    height: 50%;
-    display: flex;
-    justify-content: center;
+footer h6{
     display: none;
 }
 
-   @media(min-width: 768px){
 
-    .titulo{
-        text-align: center;
-        color: white;
-        background-color: rgb(250, 165, 179);
-        font-size: 60px;
-        margin: 30px;
-        display: none;
-    }
-    
-    
-    .producto{
-        width: 50%;
-        padding: 20px;
-     }
-
-     .imagenfondo2{
-        background-image: url('../img/concert.jpeg');
-        width: 100%;
-        height: 50%;
-        display: flex;
-        justify-content: center;
-        
-    }
-
-   
-    
-    .imagenfondo2 h1{
-        
-        color: white;
-        position: absolute;
-        font-size: 100px;
-        width: 100%;
-        margin-top: 23%;
-        text-align: center;
-        font-size: 130px;
-    
-        
-    }
-
-    h2{
-        color: white;
-       font-family: Arial, Helvetica, sans-serif;
-       background-color: rgb(31, 31, 31, 0.94);
-       height: 60px;
-       text-align: center;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-    
-    
-   }
-
-   footer{
-    background-color:rgb(46, 46, 46);
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   width: auto;
-   height: 40px;
-   
-}
-
-.header{
-    background-color:rgb(46, 46, 46);
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   width: auto;
-   height: 60px
-
-   
-
-   
-}
-
-
-ul li a:hover{
-    color: coral;
-    size: 33%;
-}
-.headeri{
-    display: none;
-}
-   }
-
-   @media(min-width: 1024px){
+@media(min-width: 768px){
 
     .header{
         background-color:rgb(46, 46, 46);
        display: flex;
        flex-direction: column;
        align-items: center;
+       justify-content: space-around;
+       height: 75px
+    }
+    
+    .opciones li a{
+        font-size: 20px;
+    }
+    .productos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 10px;
+        width: 100%;
+       
+    }
+
+    .producto p{
+        font-size: 14px;
+    }
+   
+    .producto{
+        padding: 20px;
+        width: 50%;
+        
+     }
+
+     .imagenfondoP{
+        display: block;
+        background-image: url('../img/concert.jpeg');
+        height: 50vh;
+    }
+
+    .imagenfondoP h1{
+        color: white;
+        position: absolute;
+        text-align: center;
+        font-size: 130px;
+        width: 100%;
+        margin-top: 23%;   
+    }
+
+   footer{
+    background-color:rgb(46, 46, 46);
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   width: auto;
+   height: 50px;
+}
+}
+
+
+   @media(min-width: 1024px){
+
+    .producto{
+        width: 30%;
+        padding: 20px;
+
+     }
+    
+     .productos{
+        display: flex;
+        flex-wrap: wrap;
+       justify-content: space-around;
+       padding: 2%;
+       align-items: center;
+    }
+    
+    
+    .header{
+        background-color:rgb(46, 46, 46);
+       display: flex;
+       flex-direction: column;
+       align-items: center;
        width: auto;
-       height: 55px;
+       height: 85px;
        font-family: Arial, Helvetica, sans-serif;
        
     }
 
-        footer{
-            background-color:rgb(46, 46, 46);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: auto;
-        height: 45px;
-        font-family: Arial, Helvetica, sans-serif;
-        
-        }
+    footer{
+        background-color:rgb(46, 46, 46);
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       width: auto;
+       height: 50px;
+       font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    
+    footer figure{
+        margin: 8px;
+    }
 
     
-    .titulo{
-        text-align: center;
-        color: white;
-        background-color: rgb(250, 165, 179);
-        font-size: 60px;
-        margin: 30px;
+    .imagenfondoP{
         display: none;
     }
     
-    
-       
-    .imagenfondo2{
-        background-image: url('https://cdn.pixabay.com/photo/2016/09/04/18/28/party-people-1644797_1280.jpg');
-        width: 100%;
-        height: 50%;
-        display: flex;
-        justify-content: center;
-        display: none;
-    }
+
     .imagenfondo{
-        background-image: url('../img/concert.jpeg');
+        background-image: url(../vid/Live\ music\ concert.mp4);
         width: 100%;
         height: 50%;
         display: flex;
         justify-content: center;
-        align-items: center;
-       
-        
-       
+    }
+    
+    video{
+        width: 100%;
     }
 
     .imagenfondo h1{
-        
         color: white;
         position: absolute;
         width: 100%;
-        margin-top: 0%;
         text-align: center;
-        font-size: 190px;
-    
-        
+        font-size: 190px; 
+       margin-top: 20%;
     }
+
+   
     h2{
-        color: white;
-       font-family: Arial, Helvetica, sans-serif;
-       background-color: rgb(31, 31, 31, 0.94);
        height: 60px;
-       text-align: center;
-       display: flex;
-       justify-content: center;
-       align-items: center;
    }
 
-   .producto{
-    width: 30%;
-    padding: 20px;
- }
+  
+   }
 
- .productos{
-    display: flex;
-   flex-wrap: wrap;
-   justify-content: space-around;
-}
-
-.headeri{
-    display: none;
-}
-}
