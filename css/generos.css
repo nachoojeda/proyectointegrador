@@ -3,6 +3,7 @@
     margin: 0%;
     padding: 0%;
   }
+  
 .header {
     background-color: rgb(46, 46, 46);
     display: flex;
@@ -12,14 +13,13 @@
     width: auto;
     height: 45px;
   }
+
   .divContainerBloque {
     margin-top: 126px;
     margin-bottom: 121px;
   }
   
-  ul li a:hover {
-    color: coral;
-  }
+  
   .opciones {
     display: flex;
     height: 100%;
@@ -34,17 +34,9 @@
     size: 20%;
   }
   
-  h2 {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
-    height: 60px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+ 
   
+
   .fotocumbia {
     background-color: black;
     height: 300px;
@@ -60,10 +52,13 @@
     padding: 2%;
     margin-top: 10px;
   }
+  
   .tituloGeneros {
     text-decoration: none;
     color: black;
     margin-top: 10px;
+    
+    
   }
   
   .fotopop {
@@ -89,6 +84,7 @@
     padding: 2%;
     margin-top: 10px;
   }
+  
   .fotohouse {
     background-color: black;
     height: 300px;
@@ -107,25 +103,24 @@
     text-decoration: none;
     color: white;
   }
+  
   .bloquegenero {
     text-align: center;
   }
+
+  
   footer {
     background-color: rgb(46, 46, 46);
     display: flex;
-    flex-direction: row;
+    flex-direction:row;
     justify-content: space-between;
     align-items: center;
     width: auto;
     height: 45px;
   }
-  .footer figure {
-    margin: 8px;
-  }
+
   
-  ul li a:hover {
-    color: coral;
-  }
+  
   .opciones {
     display: flex;
     height: 100%;
@@ -133,19 +128,25 @@
     width: 100%;
     align-items: center;
     font-size: 10px;
+    
+    
   }
+  
   .logo {
     color: hsl(350, 75%, 81%, 0.8);
-    margin: 5%;
+    margin: 40%;
     size: 20%;
   }
   
+
   .sylesHref {
     text-decoration: none;
     color: white;
     text-align: center;
     font-size: 15px;
   }
+
+  
   @media (min-width: 1024px) {
     body {
       background-color: rgb(250, 165, 179);
