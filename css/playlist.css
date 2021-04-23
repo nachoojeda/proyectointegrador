@@ -2,61 +2,49 @@
   box-sizing: border-box;
   margin: 0%;
   padding: 0%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.header {
-    background-color: rgb(46, 46, 46);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: auto;
-    height: 45px;
+body {
+    background-color: hsl(350, 75%, 81%, 0.8);
   }
-  
-  .titleLi {
-    margin-left: 15px;
-    font-size: 20px;
-  }
-  
-li{
-  list-style-type: none;
-  color: black;
-  padding: 5px;
+
+.header{
+  background-color:rgb(46, 46, 46);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: auto;
+  height: 45px;  
 }
 
-  .canciones li {
-    border-top: 0.5px solid black; 
-  }
-  
-  .header figure {
-    margin: 8px;
-  }
-  .opciones li a {
-    color: white;
-    font-size: 15px;
-    text-decoration: none;
-  }
-  
-  .opciones {
-    display: flex;
-    height: 100%;
-    justify-content: space-around;
-    width: 100%;
-    align-items: center;
-    font-size: 10px;
-  }
-  .logo {
+
+
+ .logo {
     color: hsl(350, 75%, 81%, 0.8);
     margin: 5%;
     size: 20%;
   }
 
-  
-  
-  h2 {
+  .opciones {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    font-size: 10px;
+  }  
+
+  .opciones li a {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+  }
+
+  h2 {
+    color: white;   
     background-color: rgb(31, 31, 31, 0.94);
     height: 60px;
     text-align: center;
@@ -64,50 +52,69 @@ li{
     justify-content: center;
     align-items: center;
   }
-  body {
-    background-color: hsl(350, 75%, 81%, 0.8);
+
+  li{
+  list-style-type: none;
+  color: black;
+  padding: 5px;
+}
+
+.canciones {
+  font-size: 25px;
+  color: green;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: justify;
+}
+
+.titleLi {
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+.canciones li {
+    border-top: 0.5px solid black; 
   }
-  
-  .Canciones {
-    font-size: 25px;
-    color: green;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    text-align: justify;
-  }
-  footer{
-    background-color:rgb(46, 46, 46);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: auto;
-    height: 45px;
- }
- .footer figure{
-     margin: 8px;
- }
+
  .opciones a {
      color:white;
      font-size: 15px;
      text-decoration: none;
      
  }
- ul li a:hover{
-     color: coral;
+ div a:hover{
+  color: hsl(350, 75%, 81%, 0.8)  
  }
- .opciones {
-     display:flex;
-     height: 100%;
-     justify-content: space-around;
-     width: 100%;
-     align-items: center;
-     font-size: 10px;
-     
- 
- }
- 
- .logo{
-     color:  hsl(350, 75%, 81%, 0.8);
-     margin: 5%;
-     size: 20%;
- }
+
+ footer{
+  background-color:rgb(46, 46, 46);
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  width: auto;
+  height: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+
+  footer h6{
+    text-align: center;
+    color:white;
+  }
+
+  @media(min-width: 1024px){
+
+    footer{
+      background-color:rgb(46, 46, 46);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: auto;
+      height: 45px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .columna{
+      width: 100%;
+    }
+
+  }
