@@ -1,38 +1,44 @@
+/*todos los elemetos*/
 *{
   box-sizing: border-box;
   margin: 0%;
   padding: 0%;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
+/*responde a la class "header" display flex(para que este flexible la caja y funcional se pueda modificar con otros estilos de flex) 
+..flex direction row(para que este en horizontal)
+..justify content space arround(distribuye el espacio entre los items. sooace arround para ue haya espacio) 
+..heigt(altura del area del elemento)*/
 .header {
-    background-color: rgb(46, 46, 46);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: auto;
-    height: 45px;
-  }
-  .divContainerBloque {
-    margin-top: 126px;
-    margin-bottom: 121px;
-  }
-  
-  ul li a:hover {
-    color: coral;
-  }
-  .opciones {
-    display: flex;
-    height: 100%;
-    justify-content: space-around;
-    width: 100%;
-    align-items: center;
-    font-size: 10px;
-  }
-  .logo {
-    color: hsl(350, 75%, 81%, 0.8);
-    margin: 5%;
-    size: 20%;
-  }
+  background-color: rgb(46, 46, 46);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  height: 45px;
+}
+
+/*cuando pasas el mouse por  arriba*/
+div a:hover{
+  color: hsl(350, 75%, 81%, 0.8)  ;
+}
+
+/*..width (anchura del area del elemento)*/
+.opciones {
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  font-size: 10px;
+}
+.logo {
+  color: hsl(350, 75%, 81%, 0.8);
+  margin: 5%;
+  size: 20%;
+}
   
   h2 {
     color: white;
@@ -50,134 +56,68 @@
     margin: 40px;
   }
   
-  .fotocumbia {
-    background-color: black;
-    height: 300px;
-    width: 300px;
-    padding: 2%;
-    margin-top: 10px;
-  }
   
-  .fotorock {
-    background-color: black;
-    height: 300px;
-    width: 300px;
-    padding: 2%;
-    margin-top: 10px;
-  }
-  .tituloGeneros {
-    text-decoration: none;
-    color: black;
-    margin-top: 10px;
-  }
-  
-  .fotopop {
-    background-color: black;
-    height: 300px;
-    width: 300px;
-    padding: 2%;
-    margin-top: 10px;
-  }
-  
-  .fotoreggaeton {
-    background-color: black;
-    height: 300px;
-    width: 300px;
-    padding: 2%;
-    margin-top: 10px;
-  }
-  
-  .fototrap {
-    background-color: black;
-    height: 300px;
-    width: 300px;
-    padding: 2%;
-    margin-top: 10px;
-  }
-  .fotohouse {
-    background-color: black;
-    height: 300px;
-    width: 300px;
-    padding: 2%;
-    margin-top: 10px;
-  }
   body {
     background-color: hsl(350, 75%, 81%, 0.8);
   }
-  
-  .generoindividual {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-size: 30px;
-    text-decoration: none;
-    color: white;
-  }
-  .bloquegenero {
-    text-align: center;
-  }
-  footer{
-    background-color:rgb(46, 46, 46);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: auto;
-    height: 45px;
- }
- .footer figure{
-     margin: 8px;
- }
- .opciones li a {
-     color:white;
-     font-size: 15px;
-     
- }
- ul li a:hover{
-     color: coral;
- }
- .opciones {
-     display:flex;
-     height: 100%;
-     justify-content: space-around;
-     width: 100%;
-     align-items: center;
-     font-size: 10px;
-     
- 
- }
- .logo{
-     color:  hsl(350, 75%, 81%, 0.8);
-     margin: 5%;
-     size: 20%;
- }
-  
+
   .estilosImagen {
+    display: flex;
+    align-items: center;
     margin: auto;
     width: 300px;
   
 
   }
-  .contenedorimagen {
-    display: flex;
-    width: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: right;
-  }
+ 
 
   .descripcion{
     margin-top: 40px;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 
   }
   
   
-  .sylesHref {
-    text-decoration: none;
-    color: white;
-    text-align: center;
-    font-size: 15px;
-  }
+  /*footer ENTERO. logo,palabras, etc...*/
+footer {
+  background-color: rgb(46, 46, 46);
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  height: 45px;
+}
+
+
+/*estilo del footer*/
+.opciones {
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  font-size: 10px;
+  
+  
+}
+/*logo en particular*/
+.logo {
+  color: hsl(350, 75%, 81%, 0.8);
+  margin: 40%;
+  size: 20%;
+}
+/*palabras del footer*/
+
+.sylesHref {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+}
+
+
   @media (min-width: 1024px) {
     body {
       background-color: rgb(250, 165, 179);
@@ -193,20 +133,22 @@
       font-family: Arial, Helvetica, sans-serif;
     }
     .contenedorimagen {
-      display: flex;
       width: 100px;
-      display: flex;
-      align-items: center;
+      margin-left: 380px;
+      width: 300px;
+      height: 300px;
       
     }
-   
-    .estilosImagen {
-      justify-content: center;
-      margin-left: 450px;
-      width: 300px;
-    
+
+    .descripcion{
+      margin-top: 100px;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 30px;
   
     }
+   
+    
   
     footer {
       background-color: rgb(46, 46, 46);
