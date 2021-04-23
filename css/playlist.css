@@ -13,14 +13,20 @@
     width: auto;
     height: 45px;
   }
+  
   .titleLi {
     margin-left: 15px;
+    font-size: 20px;
   }
-  li {
-    list-style-type: none;
-    color: black;
-    border-top: 0.5px solid black;
-    padding: 5px;
+  
+li{
+  list-style-type: none;
+  color: black;
+  padding: 5px;
+}
+
+  .canciones li {
+    border-top: 0.5px solid black; 
   }
   
   .header figure {
@@ -45,6 +51,8 @@
     margin: 5%;
     size: 20%;
   }
+
+  
   
   h2 {
     color: white;
