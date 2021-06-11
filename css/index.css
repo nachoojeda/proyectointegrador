@@ -91,18 +91,72 @@ h2{
 .canciones{
     display: flex;
    flex-wrap: wrap;
+   justify-content: center;
 }
 
 .albums{
     display: flex;
    flex-wrap: wrap;
+   justify-content: center;
 }
 
 .artistas{
     display: flex;
    flex-wrap: wrap;
+   justify-content: center;
 }
-
+.cancion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 30%;
+}
+.cancion:hover{
+    background-color: rgba(245, 145, 161, 0.8);
+}
+.cancion h3 a:hover{
+    color: white;
+}
+.album h3 a:hover{
+    color: white;
+}
+.artista h3 a:hover{
+    color: white;
+}
+.album:hover{
+    background-color: rgba(245, 145, 161, 0.8);
+}
+.artista:hover{
+    background-color: rgba(245, 145, 161, 0.8);
+}
+.cancion a:hover{
+    color: white;
+    
+}.album a:hover{
+    color: white;
+    
+}.artista a:hover{
+    color: white;
+    
+}
+.album{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 30%;
+}
+.artista{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 30%;
+}
 .producto p{
     font-size: 15px;
 }
