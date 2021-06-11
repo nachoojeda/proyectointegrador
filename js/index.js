@@ -1,28 +1,32 @@
 console.log("dsfasd");
 
-
-fetch("")
+fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/")
 .then(function(response){
     return response.json();
 })
 .then(function(data){
-    let cancion = document.querySelector(".cancion")
-    let album = document.querySelector(".album")
-    let artista = document.querySelector(".artista")
+    console.log(data);
+    let topCanciones = data.tracks.data
+    let topAlbums = data.albums.data
+    let topArtistas = data.artists.data
 
-    for (let i = 0; i < topcanciones.length; i++) {
-        cancion.innerHTML += '<nav class="carta"><img class="imgl" src="'+ lacancion.imagen +'" alt="'+ lacancion.nombre +'">  </nav> <h3><a href="'+ +'"> ' + lacancion.nombre +'</a></h3>     <p>Cancion que pertenece al album <a href="'+ lacancion.album +'"> <b>'+ lacancion.album.nombre +'</b></a> de <a href="'+lacancion.artista.nombre+'.html"> <b>Mac Miller</b></a></p>'
+    let cancion = document.querySelector(".canciones")
+    let album = document.querySelector(".albums")
+    let artista = document.querySelector(".artistas")
+
+    for (let i = 0; i < 6; i++) {
+        cancion.innerHTML += '<nav class="cancion"><nav class="carta"><img class="imgl" src="'+ topCanciones[i].album.cover_medium +'" alt="'+ topCanciones[i].title +'">  </nav> <h3><a href="'+ +'"> ' + topCanciones[i].title +'</a></h3>     <p>Cancion que pertenece al album <a href="'+ topCanciones[i].album.title +'"> <b>'+ topCanciones[i].album.title +'</b></a> de <a href="' + topCanciones[i].artist.name + '.html"> <b>'+topCanciones[i].artist.name+'</b></a></p></nav>'
     }
                       
-    for (let i = 0; i < topalbumes.length; i++) {
-        album.innerHTML += '<nav class="carta"><a href="'+ album.nombre +'.html"><img class="imgl" src="'+ album.imagen +'" alt="'+ album.nombre+' by '+ album.artista+'"></a></nav><h3><a href="'+ album.nombre+'.html">'+album.nombre+'</a></h3><p> Album lanzado en el año '+album.anio+'por <a href="'+album.artista+'.html"><b>'+album.artista+'</b></a></p>'
+    for (let i = 0; i < 6; i++) {
+        album.innerHTML += '<nav class="album"><nav class="carta"><a href="'+ topAlbums[i].title +'.html"><img class="imgl" src="'+ topAlbums[i].cover_medium +'" alt="'+ topAlbums[i].title +' by '+ topAlbums[i].artista.name +'"></a></nav><h3><a href="'+ topAlbums[i].title +'.html">'+topAlbums[i].title+'</a></h3><p> Album lanzado por <a href="'+topAlbums[i].artist.name+'.html"><b>'+topAlbums[i].artist.name+'</b></a></p></nav>'
         
     }
     
-    for (let i = 0; i < topartistas.length; i++) {
-        artista.innerHTML += '<nav class="carta"><a href="'+ artista.nombre +'.html"><img class="imgl" src="'+ artista.imagen +'" alt="'+ artista.nombre +'"> </a> </nav><h3><a href="'+ artista.nombre +'".html">'+ artista.nombre +'</a></h3><p>'+ artista.oyentes +'oyentes mensuales</p></nav>'
+    for (let i = 0; i < 6; i++) {
+        artista.innerHTML += '<nav class="artista"><nav class="carta"><a href="'+ topArtistas[i].name +'.html"><img class="imgl" src="'+ topArtistas[i].picture_medium +'" alt="'+ topArtistas[i].name +'"> </a> </nav><h3><a href="'+ topArtistas[i].name +'".html">'+ topArtistas[i].name +'</a></h3></nav></nav>'
         
     }
 })
 
-xdxdxdxdxdxdxdxd
+
