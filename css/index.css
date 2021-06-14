@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 body{
     background-color:  hsl(350, 75%, 81%, 0.3);
@@ -12,10 +12,7 @@ a{
     color: rgb(46, 46, 46);
 }
 p{
-    font-family: Arial, Helvetica, sans-serif;
-}
-h1{
-    font-family: unset;
+    color: rgb(46, 46, 46);
 }
 .header{
     background-color:rgb(46, 46, 46);
@@ -26,38 +23,28 @@ h1{
    width: 100%;
    height: 45px;
 }
-
 .logo{
     margin: 8px;
     color:  hsl(350, 75%, 81%, 0.8);
-    
+    font-size: 28px;
 }
 a:hover{
     transition: .5;
 }
-
 .logo:visited{
     color: hsl(350, 75%, 81%, 0.8) ;
 }
-
-
-
 .opciones li a{
     text-decoration:none;
     padding:0;
-    font-family: Arial, Helvetica, sans-serif;
     color:white;
 }
-
 .opciones li a:hover{
     color: hsl(350, 75%, 81%, 0.8);
 }
-
-
 .opciones li{
     list-style-type: none;
 }
-
 .opciones {
     display:flex;
     justify-content: space-around;
@@ -65,15 +52,12 @@ a:hover{
     align-items: center;
     font-size: 10px;
 }
-
 .imagenfondo{
     display: none;
 }
-
 .imagenfondoP{
     display: none;
 }
-
 .listas{
     display: flex;
     flex-direction: column;
@@ -81,7 +65,7 @@ a:hover{
 h2{
     background-color: rgb(46, 46, 46);
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    
     height: 70px;
     display: flex;
    justify-content: center;
@@ -91,18 +75,75 @@ h2{
 .canciones{
     display: flex;
    flex-wrap: wrap;
+   justify-content: center;
 }
 
 .albums{
     display: flex;
    flex-wrap: wrap;
+   justify-content: center;
 }
 
 .artistas{
     display: flex;
    flex-wrap: wrap;
+   justify-content: center;
 }
-
+.cancion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+.album{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+.artista{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.cancion:hover{
+    background-color: rgba(245, 145, 161, 0.8);
+}
+.cancion h3 a:hover{
+    color: white;
+}
+.album h3 a:hover{
+    color: white;
+}
+.artista h3 a:hover{
+    color: white;
+}
+.album:hover{
+    background-color: rgba(245, 145, 161, 0.8);
+}
+.artista:hover{
+    background-color: rgba(245, 145, 161, 0.8);
+}
+.cancion a:hover{
+    color: white;
+    
+}.album a:hover{
+    color: white;
+    
+}.artista a:hover{
+    color: white;
+    
+}
 .producto p{
     font-size: 15px;
 }
@@ -188,7 +229,22 @@ footer h6{
     .opciones li a{
         font-size: 20px;
     }
-    .productos{
+    .canciones{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 10px;
+        width: 100%;
+       
+    }
+    .albums{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 10px;
+        width: 100%;
+       
+    }.artistas{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -201,7 +257,16 @@ footer h6{
         font-size: 14px;
     }
    
-    .producto{
+    .cancion{
+        padding: 20px;
+        width: 50%;
+        
+     }
+     .album{
+        padding: 20px;
+        width: 50%;
+        
+     }.artista{
         padding: 20px;
         width: 50%;
         
@@ -235,8 +300,31 @@ footer h6{
 
 
    @media(min-width: 1024px){
-
-    .producto{
+    .cancion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        width: 30%;
+    }
+    .album{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        width: 30%;
+    }
+    .artista{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        width: 30%;
+    }
+    /* .producto{
         width: 30%;
         padding: 20px;
 
@@ -248,7 +336,7 @@ footer h6{
        justify-content: space-around;
        padding: 2%;
        align-items: center;
-    }
+    } */
     
     
     .header{
