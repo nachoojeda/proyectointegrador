@@ -54,7 +54,30 @@ a:hover{
     color: hsl(350, 75%, 81%, 0.8) ;
 }
 
-
+.cancion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 30%;
+}
+.album{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 30%;
+}
+.artista{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 30%;
+}
 
 .opciones li a{
     text-decoration:none;
