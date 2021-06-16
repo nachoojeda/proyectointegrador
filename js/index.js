@@ -13,7 +13,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/")
     let artista = document.querySelector(".artistas")
 
     for (let i = 0; i < 6; i++) {
-        cancion.innerHTML += '<nav class="cancion"><nav class="carta"><img class="imgl" src="'+ topCanciones[i].album.cover_big +'" alt="'+ topCanciones[i].title +'"></nav> <h3><a href="detalleCancion.html?id='+topCanciones[i].id+'"> ' + topCanciones[i].title +'</a></h3><p>Cancion que pertenece al album <a href="detalleAlbum.html?id='+topCanciones[i].album.id+'"> <b>'+ topCanciones[i].album.title +'</b></a> de <a href="detalleArtista.html?id='+topCanciones[i].artist.id+'"> <b>'+topCanciones[i].artist.name+'</b></a></p></nav>'
+        cancion.innerHTML += '<nav class="cancion"><nav class="carta"><a href="detalleCancion.html?id='+topCanciones[i].id+'"><img class="imgl" src="'+ topCanciones[i].album.cover_big +'" alt="'+ topCanciones[i].title +'"></a></nav> <h3><a href="detalleCancion.html?id='+topCanciones[i].id+'"> ' + topCanciones[i].title +'</a></h3><p>Cancion que pertenece al album <a href="detalleAlbum.html?id='+topCanciones[i].album.id+'"> <b>'+ topCanciones[i].album.title +'</b></a> de <a href="detalleArtista.html?id='+topCanciones[i].artist.id+'"> <b>'+topCanciones[i].artist.name+'</b></a></p></nav>'
     }
 
                 
