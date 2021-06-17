@@ -16,11 +16,10 @@ let titulo = document.querySelector('.titulo')
 titulo.innerHTML += data.title
 
 let imagen = document.querySelector('.imagenmac')
-imagen.innerHTML += '<img src="'+data.album.cover_medium+'" alt="'+data.artist.name+'">'
+imagen.innerHTML += '<img src="'+data.album.cover_big+'" alt="'+data.artist.name+'">'
 
 let detalleCancion = document.querySelector('.parrafo')
 detalleCancion.innerHTML += '<h1>'+data.title+'</h1><h2>From <a href="detalleAlbum.html?id='+data.album.id+'">'+data.album.title+'</a></h2><h2 class="by">By <a href="detalleArtista.html?id='+data.artist.id+'">'+data.artist.name+'</a></h2>'
-
 })
 
 
