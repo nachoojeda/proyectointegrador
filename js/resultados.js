@@ -30,7 +30,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/track?q
 
    for (let i = 0; i < cancion.length; i++) {
        
-    listaCanciones.innerHTML += '<nav class="cancion"><nav class="carta"><img class="imgl" src="'+ cancion[i].album.cover_big +'" alt="'+ cancion[i].title +'"></nav> <h3><a href="detalleCancion.html?id='+cancion[i].id+'"> ' + cancion[i].title +'</a></h3><p>Cancion que pertenece al album <a href="detalleAlbum.html?id='+cancion[i].album.id+'"> <b>'+ cancion[i].album.title +'</b></a> de <a href="detalleArtista.html?id='+cancion[i].artist.id+'"> <b>'+cancion[i].artist.name+'</b></a></p></nav>'
+    listaCanciones.innerHTML += '<nav class="cancion"><nav class="carta"><a href="detalleCancion.html?id='+cancion[i].id+'"><img class="imgl" src="'+ cancion[i].album.cover_big +'" alt="'+ cancion[i].title +'"></a></nav> <h3><a href="detalleCancion.html?id='+cancion[i].id+'"> ' + cancion[i].title +'</a></h3><p>Cancion que pertenece al album <a href="detalleAlbum.html?id='+cancion[i].album.id+'"> <b>'+ cancion[i].album.title +'</b></a> de <a href="detalleArtista.html?id='+cancion[i].artist.id+'"> <b>'+cancion[i].artist.name+'</b></a></p></nav>'
    }
 })
 

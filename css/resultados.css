@@ -267,7 +267,8 @@ footer h6{
 }
 h1{
     font-size: 60px;
-    background-image: url(https://ak.picdn.net/shutterstock/videos/4863305/thumb/1.jpg);
+    height: 50vh;
+ background-image: url(https://ak.picdn.net/shutterstock/videos/4863305/thumb/1.jpg); 
     
 }
 

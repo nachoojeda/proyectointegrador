@@ -22,15 +22,6 @@ let detalleCancion = document.querySelector('.parrafo')
 detalleCancion.innerHTML += '<h1>'+data.title+'</h1><h2>From <a href="detalleAlbum.html?id='+data.album.id+'">'+data.album.title+'</a></h2><h2 class="by">By <a href="detalleArtista.html?id='+data.artist.id+'">'+data.artist.name+'</a></h2>'
 })
 
-
-
-
-
-
-
-
-
-
 let playlist = []
 let recuperoStorage = localStorage.getItem('playlist') ;
 console.log(localStorage);//traes algo que se llama local sotrage
@@ -44,7 +35,7 @@ if(recuperoStorage == null){
 }
 
 if(playlist.includes(idTrack)){ // si la cancion ya esta en la playlist, que diga lo siguiente
-    document.querySelector('.boton').innerHTML = 'REMOVE FROM PLAYLIST'
+    document.querySelector('.boton').innerHTML = 'Eliminar de playlist'
 }
 let agregar = document.querySelector('.boton') ;
 agregar.addEventListener('click', function(){ // cuando clickeas en el boton
@@ -52,11 +43,11 @@ agregar.addEventListener('click', function(){ // cuando clickeas en el boton
         let indiceEnElArray = playlist.indexOf(idTrack); // cuenta cuantas veces esta la cancion
         console.log(indiceEnElArray);
         playlist.splice(indiceEnElArray, 1); //splice la saca del array, la borra de la playlist
-        document.querySelector('.boton').innerHTML = 'ADD TO PLAYLIST' ; // y se pone el boton agregar 
+        document.querySelector('.boton').innerHTML = 'Agregar a playlist' ; // y se pone el boton agregar 
         console.log(playlist);
     } else{ // si no esta en la playlist
      playlist.push(idTrack); // metele la cancion al array
-     document.querySelector('.boton').innerHTML = 'REMOVE FROM PLAYLIST' ; //que el boton pase a dar la opcion de borrar
+     document.querySelector('.boton').innerHTML = 'Eliminar de playlist' ; //que el boton pase a dar la opcion de borrar
 
     }
      let playlistParaStorage = JSON.stringify(playlist) ; // a lo que esta en JSON, lo traduce devuelta a tipo string para mandarlo

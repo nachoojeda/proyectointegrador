@@ -166,6 +166,7 @@ footer{
 .generoindividual{
   display: flex;
   flex-wrap: wrap;
+  width: 30%;
 }
 
 }
