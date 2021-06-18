@@ -9,7 +9,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/")
 
     let listaGeneros = document.querySelector('.bloquegenero')
     for (let i = 0; i < generos.length ; i++) {
-    listaGeneros.innerHTML += '<div class="generoindividual"><a href="detallegenero.html?id='+ generos[i].id +'" class="tituloGeneros"> '+ generos[i].name +' </a> <div><img  class="foto" src="'+ generos[i].picture_big +'" alt="'+generos[i].name+'"></div></div>'    
+    listaGeneros.innerHTML += '<div class="generoindividual"><div><img  class="foto" src="'+ generos[i].picture_big +'" alt="'+generos[i].name+'"></div><a href="detallegenero.html?id='+ generos[i].id +'" class="tituloGeneros"> '+ generos[i].name +' </a> </div>'    
     }
 
 })
