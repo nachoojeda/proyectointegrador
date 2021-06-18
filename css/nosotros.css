@@ -136,7 +136,9 @@ footer h6{
     font-size: 28px;
     margin: 8px;
 }
-
+.logo a:hover {
+    color: white;
+}
 
 
     @media(min-width: 768px){

@@ -6,187 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playlist</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/playlist.css">
 </head>
 <body>
     
     <div class="container">
         <header class="header">
-            <figure>
-            <a href="index.html" class="logo"><i class="fas fa-compact-disc"></i></a>
-             </figure>
-    
-            <div class="opciones">
-                <a href="index.html">Home</a>
-                <a href="">Playlist</a>
-                <a href="generos.html">Generos</a>                
-            </div>
-            
+            <figure class="logo">
+                <a href="index.html" class="logo"><i class="fas fa-compact-disc"></i></a>
+            </figure>
+
+            <ul class="opciones">
+
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="playlist.html">Playlist</a> </li>
+
+                <li>
+                    <form action="resultados.html" method="GET"><input type="text" name="search"
+                            placeholder="Buscar..."> <button type="submit"><i class="fas fa-search"></i></button>
+                </li>
+
+                <li><a href="generos.html">Generos</a> </li>
+                <li><a href="mas.html">Mas</a> </li>
+
+            </ul>
+
         </header>
-        <div>
-            <h2 >Tus canciones favoritas</h2>
+        <div class="cuerpo">
+            
             <div class="canciones">
+                <h1 class="titulo"></h1>
                 <ul class="playlist">
-                <!-- <li> 
-                    <i class="fas fa-heart"></i> 
-                    <a class="titleLi"> Jullie </a>
-                </li>
-                <li >
-                    <i class="fas fa-heart"></i> 
-                    <a class="titleLi"> Pana </a>
-                </li>
-                <li >
-                    <i class="fas fa-heart"></i> 
-                    <a class="titleLi"> Hurracane </a>
-                </li>
-                <li >
-                    <i class="fas fa-heart"></i> 
-                    <a class="titleLi"> Ojos de video tape </a>
-                </li>
-                <li >
-                    <i class="fas fa-heart"></i> 
-                    <a class="titleLi"> Paper Aeroplane </a>
-                </li>
-                <li >
-                    <i class="fas fa-heart"></i> 
-                    <a class="titleLi"> All I want is you </a>
-                </li>
-                <li >
-                    <i class="fas fa-heart"></i> 
-                    <a class="titleLi"> Adios </a>                   
-                </li>
-                <li >
-                    <i class="fas fa-heart"></i> 
-                    <a class="titleLi"> Dutty Love </a>
-                </li>
-                <li >
-                    <i class="fas fa-heart"></i> 
-                    <a class="titleLi"> Inolvidable </a>                    
-                </li>
-                <li >
-                    <i class="fas fa-heart"></i> 
-                    <a class="titleLi"> Impossible </a>
-                </li>
-                <li >
-                    <i class="fas fa-heart"></i> 
-                    <a class="titleLi"> Murguita del sur </a>
-                </li>
-                <li >
-                    <i class="fas fa-heart"></i> 
-                    <a class="titleLi"> Tan Lejos </a>
-                </li>
-                <li >
-                    <i class="fas fa-heart"></i> 
-                    <a class="titleLi"> Hasta la Raiz </a>
-                </li>
-                <li >
-                    <i class="fas fa-heart"></i> 
-                    <a class="titleLi"> Fuiste tu </a>
-                </li>
-                <li >
-                    <i class="fas fa-heart"></i> 
-                    <a class="titleLi"> I'm Yours </a>
-                </li>
-                <li >
-                    <i class="fas fa-heart"></i> 
-                    <a class="titleLi"> Oncemil </a>
-                </li>
-                <li >
-                    <i class="fas fa-heart"></i> 
-                    <a class="titleLi"> Sirenas </a>
-                </li>
-                <li >
-                    <i class="fas fa-heart"></i> 
-                    <a class="titleLi"> Su Fiel Admirador </a>
-                </li>
-                <li >
-                    <i class="fas fa-heart"></i> 
-                    <a class="titleLi"> Crimen </a>
-                </li>
-                <li >
-                    <i class="fas fa-heart"></i> 
-                    <a class="titleLi"> Me voy </a>
-                </li>
-                <li >
-                    <i class="fas fa-heart"></i> 
-                    <a class="titleLi"> Dile </a>
-                </li>
-                <li >
-                    <i class="fas fa-heart"></i> 
-                    <a class="titleLi"> Motivos </a>
-                </li>
-                <li >
-                    <i class="fas fa-heart"></i> 
-                    <a class="titleLi"> Me llama </a>
-                </li>
-                <li >
-                    <i class="fas fa-heart"></i> 
-                    <a class="titleLi"> Rain </a>
-                </li>
-                <li >
-                    <i class="fas fa-heart"></i> 
-                    <a class="titleLi"> Me haces bien </a>
-                </li>
-                <li >
-                    <i class="fas fa-heart"></i> 
-                    <a class="titleLi"> Lo siento </a>
-                </li>
-                <li >
-                    <i class="fas fa-heart"></i> 
-                    <a class="titleLi"> Inoportuna </a>
-                </li>
-                <li >
-                    <i class="fas fa-heart"></i> 
-                    <a class="titleLi"> Milonga Paraguaya </a>
-                </li>
-                <li >
-                    <i class="fas fa-heart"></i> 
-                    <a class="titleLi"> Cancion de cuna </a>
-                </li>
-                <li >
-                    <i class="fas fa-heart"></i> 
-                    <a class="titleLi"> Me vieron cruzar </a>
-                </li>
-                <li >
-                    <i class="fas fa-heart"></i> 
-                    <a class="titleLi"> Dos Romeos </a>
-                </li>
-                <li >
-                    <i class="fas fa-heart"></i> 
-                    <a class="titleLi"> Paloma </a>
-                </li>
-                <li >
-                    <i class="fas fa-heart"></i> 
-                    <a class="titleLi"> Stan </a>
-                </li>
-                <li >
-                    <i class="fas fa-heart"></i> 
-                    <a class="titleLi"> Travelling Alone </a>
-                </li>
-                <li >
-                    <i class="fas fa-heart"></i> 
-                    <a class="titleLi"> Strangers </a>
-                </li>
-                <li >
-                    <i class="fas fa-heart"></i> 
-                    <a class="titleLi"> Las Transeuntes </a>
-                </li>
-                <li >
-                    <i class="fas fa-heart"></i> 
-                    <a class="titleLi"> Fantasmas </a>
-                </li>
-                <li >
-                    <i class="fas fa-heart"></i> 
-                    <a class="titleLi"> Peperina </a>
-                </li>
-                <li >
-                    <i class="fas fa-heart"></i> 
-                    <a class="titleLi"> instituciones </a>
-                </li>
-                <li >
-                    <i class="fas fa-heart"></i> 
-                    <a class="titleLi"> Loosing Keys </a>
-                </li> -->
+               
             </ul>
 
             </div>
@@ -194,23 +46,34 @@
         </div>
 
         <footer>
-                
-            <figure>
+
+            <figure class="logo">
                 <a href="index.html" class="logo"><i class="fas fa-compact-disc"></i></a>
-                 </figure>
-    
-            <div class="columna">
+            </figure>
+
+            <nav class="columna">
                 <ul class="opciones">
-                <li><a href="nosotros.html">Nostros</a> </li>
-                <li><a href="contacto.html">Contacto</a> </li>
-                <li><a href="mas.html">Mas</a> </li>
+                    <li><a href="nosotros.html">Nostros</a> </li>
+                    <li><a href="contacto.html">Contacto</a> </li>
+                    <li><a href="mas.html">Mas</a> </li>
                 </ul>
-        
-    
-           <h6 class="derechos">Todos los derechos reservados Msc. Ignacio Javier Ojeda Vecellio, Marcos Bordeu, Miguel Guerrero</h6>
-        </div>
-       
+               
+
+                
+               
+            </nav>
+            <nav class="columna2">
+                <ul class="sociales">
+                    <li> <a href="https://www.instagram.com/marcos.bordeu/" class="fa fa-facebook"></a></li>
+                    <li> <a href="https://www.instagram.com/migueguerrero1/" class="fa fa-twitter"></a> </li>
+                    <li> <a href="https://www.instagram.com/nachoojeda/" class="fa fa-instagram"></a> </li>
+                    <li> <a href="https://www.youtube.com/channel/UClUcixHBN-AiUmGkY5JSQXA" class="fa fa-youtube"></a> </li>
+                </ul>
+            </nav>
         </footer>
+
+
+
     </div>
     <script src="js/playlist.js"></script>
 </body>

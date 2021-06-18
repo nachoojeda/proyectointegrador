@@ -1,33 +1,84 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0%;
   padding: 0%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.logo a:hover {
+  color: white;
+}
+
+.canciones {
+  height: 90vh;
+}
+
+.sociales a {
+  font-size: 25px;
+}
+
+.sociales {
+  display: flex;
+  list-style: none;
+  padding-left: 3%;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.sociales li {
+  margin-left: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  font-style: oblique;
+  color: white;
+}
+
+footer a:hover {
+  color: rgba(245, 145, 161, 0.8);
+}
+
+footer {
+  background-color: rgb(46, 46, 46);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: auto;
+  height: 45px;
+
+}
+
+.columna2 {
+  margin-right: 1%;
 }
 
 body {
-    background-color: hsl(350, 75%, 81%, 0.8);
-  }
-
-.header{
-  background-color:rgb(46, 46, 46);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  width: auto;
-  height: 45px;  
+  background-color: hsl(350, 75%, 81%, 0.8);
 }
 
+.header {
+  background-color: rgb(46, 46, 46);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 45px;
+}
 
+.logo {
+  margin: 8px;
+  color: hsl(350, 75%, 81%, 0.8);
+  font-size: 28px;
+}
 
- .logo {
-    color: hsl(350, 75%, 81%, 0.8);
-    margin: 5%;
-    size: 20%;
-  }
+.logo:visited {
+  color: hsl(350, 75%, 81%, 0.8);
+}
 
-  .opciones {
+/* .opciones {
     display: flex;
     flex-direction: row;
     height: 100%;
@@ -35,25 +86,40 @@ body {
     width: 100%;
     align-items: center;
     font-size: 10px;
-  }  
+  }   */
 
-  .opciones li a {
+.opciones {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  font-size: 10px;
+}
+
+/* .opciones li a {
     color: white;
     font-size: 15px;
     text-decoration: none;
-  }
+  } */
 
-  h2 {
-    color: white;   
-    background-color: rgb(31, 31, 31, 0.94);
-    height: 60px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.opciones li a {
+  text-decoration: none;
+  padding: 0;
+  color: white;
+}
 
-  li{
+
+h1 {
+  color: white;
+  background-color: rgb(31, 31, 31, 0.94);
+  height: 60px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
   list-style-type: none;
   color: black;
   padding: 5px;
@@ -61,8 +127,7 @@ body {
 
 .canciones {
   font-size: 25px;
-  color: green;
-  font-family: Georgia, "Times New Roman", Times, serif;
+
   text-align: justify;
 }
 
@@ -72,49 +137,62 @@ body {
 }
 
 .canciones li {
-    border-top: 0.5px solid black; 
-  }
+  border-top: 0.5px solid black;
+}
 
- .opciones a {
-     color:white;
-     font-size: 15px;
-     text-decoration: none;
-     
- }
- div a:hover{
-  color: hsl(350, 75%, 81%, 0.8)  
- }
+.opciones a {
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
 
- footer{
-  background-color:rgb(46, 46, 46);
+}
+
+div a:hover {
+  color: hsl(350, 75%, 81%, 0.8)
+}
+
+footer {
+  background-color: rgb(46, 46, 46);
   display: flex;
   flex-direction: row;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
   width: auto;
   height: 45px;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+footer h6 {
+  text-align: center;
+  color: white;
+}
+
+@media(min-width: 1024px) {
+
+  .cuerpo{
+    height: 90vh;
+  }
+  footer {
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    height: 45px;
+
   }
 
-  footer h6{
-    text-align: center;
-    color:white;
+  .header {
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: 85px;
   }
 
-  @media(min-width: 1024px){
-
-    footer{
-      background-color:rgb(46, 46, 46);
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      width: auto;
-      height: 45px;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .columna{
-      width: 100%;
-    }
-
+  .columna {
+    width: 100%;
   }
+
+}

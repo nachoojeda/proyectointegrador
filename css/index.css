@@ -1,95 +1,149 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-body{
-    background-color:  hsl(350, 75%, 81%, 0.3);
+
+.sociales a {
+    font-size: 25px;
 }
 
-a{
+.sociales {
+    display: flex;
+    list-style: none;
+    padding-left: 3%;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sociales li {
+    margin-left: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    font-style: oblique;
+    color: white;
+}
+
+footer a:hover {
+    color: rgba(245, 145, 161, 0.8);
+}
+
+
+
+.columna2 {
+    margin-right: 1%;
+}
+
+body {
+    background-color: hsl(350, 75%, 81%, 0.3);
+}
+
+a {
+    color: rgb(46, 46, 46);
+    text-decoration: none;
+
+}
+
+p {
     color: rgb(46, 46, 46);
 }
-p{
-    color: rgb(46, 46, 46);
+
+.header {
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 45px;
 }
-.header{
-    background-color:rgb(46, 46, 46);
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   align-items: center;
-   width: 100%;
-   height: 45px;
-}
-.logo{
+
+.logo {
     margin: 8px;
-    color:  hsl(350, 75%, 81%, 0.8);
+    color: hsl(350, 75%, 81%, 0.8);
     font-size: 28px;
 }
-a:hover{
+
+.logo a:hover {
+    color: white;
+}
+
+a:hover {
     transition: .5;
 }
-.logo:visited{
-    color: hsl(350, 75%, 81%, 0.8) ;
-}
-.opciones li a{
-    text-decoration:none;
-    padding:0;
-    color:white;
-}
-.opciones li a:hover{
+
+.logo:visited {
     color: hsl(350, 75%, 81%, 0.8);
 }
-.opciones li{
+
+.opciones li a {
+    text-decoration: none;
+    padding: 0;
+    color: white;
+}
+
+.opciones li a:hover {
+    color: hsl(350, 75%, 81%, 0.8);
+}
+
+.opciones li {
     list-style-type: none;
 }
+
 .opciones {
-    display:flex;
+    display: flex;
     justify-content: space-around;
     width: 100%;
     align-items: center;
     font-size: 10px;
 }
-.imagenfondo{
+
+.imagenfondo {
     display: none;
 }
-.imagenfondoP{
+
+.imagenfondoP {
     display: none;
 }
-.listas{
+
+.listas {
     display: flex;
     flex-direction: column;
 }
-h2{
+
+h2 {
     background-color: rgb(46, 46, 46);
     color: white;
-    
+
     height: 70px;
     display: flex;
-   justify-content: center;
-   align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
-.canciones{
+.canciones {
     display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.albums{
+.albums {
     display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.artistas{
+.artistas {
     display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-.cancion{
+
+.cancion {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -97,7 +151,8 @@ h2{
     padding: 20px;
     width: 100%;
 }
-.album{
+
+.album {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -105,7 +160,8 @@ h2{
     padding: 20px;
     width: 100%;
 }
-.artista{
+
+.artista {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -113,42 +169,52 @@ h2{
     padding: 20px;
     width: 100%;
 }
-a{
-    text-decoration: none;
-}
-.cancion:hover{
+
+
+.cancion:hover {
     background-color: rgba(245, 145, 161, 0.8);
 }
-.cancion h3 a:hover{
+
+.cancion h3 a:hover {
     color: white;
 }
-.album h3 a:hover{
+
+.album h3 a:hover {
     color: white;
 }
-.artista h3 a:hover{
+
+.artista h3 a:hover {
     color: white;
 }
-.album:hover{
+
+.album:hover {
     background-color: rgba(245, 145, 161, 0.8);
 }
-.artista:hover{
+
+.artista:hover {
     background-color: rgba(245, 145, 161, 0.8);
 }
-.cancion a:hover{
+
+.cancion a:hover {
     color: white;
-    
-}.album a:hover{
-    color: white;
-    
-}.artista a:hover{
-    color: white;
-    
+
 }
-.producto p{
+
+.album a:hover {
+    color: white;
+
+}
+
+.artista a:hover {
+    color: white;
+
+}
+
+.producto p {
     font-size: 15px;
 }
 
-.producto{
+.producto {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -157,150 +223,202 @@ a{
     width: 100%;
 }
 
-.producto a{
+.producto a {
     text-decoration: none;
 }
 
-.producto h3 a{
+.producto h3 a {
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
 }
-.producto h3 a:hover{
+
+.producto h3 a:hover {
     color: white;
 }
 
-.lista{
-    background-color: hsl(350, 75%, 81%, 0.8); 
+.lista {
+    background-color: hsl(350, 75%, 81%, 0.8);
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-.carta{
+.carta {
     width: 100%;
 }
 
-.imgl{
-    border: solid 20px white; 
+.imgl {
+    border: solid 20px white;
     width: 100%;
 }
 
-.producto a:hover{
+.producto a:hover {
     color: white;
-    
+
 }
 
-.producto:hover{
+.producto:hover {
     background-color: rgba(245, 145, 161, 0.8);
 }
-footer{
-    background-color:rgb(46, 46, 46);
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: space-between;
-   height: 45px;
-   
+
+footer {
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 45px;
+
 }
 
-.columna{
+.columna {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
-footer h6{
+
+footer h6 {
     text-align: center;
-    color:white;
+    color: white;
     display: none;
 }
 
 
-@media(min-width: 768px){
+@media(min-width: 768px) {
 
-    .header{
-        background-color:rgb(46, 46, 46);
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       justify-content: space-around;
-       height: 75px
+    .header {
+        background-color: rgb(46, 46, 46);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 75px
     }
-    
-    .opciones li a{
+
+    .opciones li a {
         font-size: 20px;
     }
-    .canciones{
+
+    .canciones {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         padding: 10px;
         width: 100%;
-       
-    }
-    .albums{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding: 10px;
-        width: 100%;
-       
-    }.artistas{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding: 10px;
-        width: 100%;
-       
+
     }
 
-    .producto p{
+    .albums {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 10px;
+        width: 100%;
+
+    }
+
+    .artistas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 10px;
+        width: 100%;
+
+    }
+
+    .producto p {
         font-size: 14px;
     }
-   
-    .cancion{
-        padding: 20px;
-        width: 50%;
-        
-     }
-     .album{
-        padding: 20px;
-        width: 50%;
-        
-     }.artista{
-        padding: 20px;
-        width: 50%;
-        
-     }
 
-     .imagenfondoP{
+    .cancion {
+        padding: 20px;
+        width: 50%;
+
+    }
+
+    .album {
+        padding: 20px;
+        width: 50%;
+
+    }
+
+    .artista {
+        padding: 20px;
+        width: 50%;
+
+    }
+
+    .imagenfondoP {
         display: block;
         background-image: url('../img/concert.jpeg');
         height: 50vh;
     }
 
-    .imagenfondoP h1{
+    .imagenfondoP h1 {
         color: white;
         position: absolute;
         text-align: center;
         font-size: 130px;
         width: 100%;
-        margin-top: 23%;   
+        margin-top: 23%;
     }
 
-   footer{
-    background-color:rgb(46, 46, 46);
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   width: auto;
-   height: 50px;
+    footer {
+        background-color: rgb(46, 46, 46);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+        height: 50px;
+    }
+
 }
 
-}
 
+@media(min-width: 1024px) {
 
-   @media(min-width: 1024px){
-    .cancion{
+    .sociales a {
+        font-size: 25px;
+    }
+
+    .sociales {
+        display: flex;
+        list-style: none;
+        padding-left: 3%;
+        margin: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .sociales li {
+        margin-left: 10px;
+    }
+
+    footer a {
+        text-decoration: none;
+        font-style: oblique;
+        color: white;
+    }
+
+    footer a:hover {
+        color: rgba(245, 145, 161, 0.8);
+    }
+
+    footer {
+        background-color: rgb(46, 46, 46);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+        height: 45px;
+
+    }
+
+    .columna2 {
+        margin-right: 1%;
+    }
+
+    .cancion {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -308,7 +426,8 @@ footer h6{
         padding: 20px;
         width: 30%;
     }
-    .album{
+
+    .album {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -316,7 +435,8 @@ footer h6{
         padding: 20px;
         width: 30%;
     }
-    .artista{
+
+    .artista {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -324,6 +444,7 @@ footer h6{
         padding: 20px;
         width: 30%;
     }
+
     /* .producto{
         width: 30%;
         padding: 20px;
@@ -337,65 +458,54 @@ footer h6{
        padding: 2%;
        align-items: center;
     } */
-    
-    
-    .header{
-        background-color:rgb(46, 46, 46);
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       width: auto;
-       height: 85px;
-       font-family: Arial, Helvetica, sans-serif;
-       
-    }
 
-        footer{
-        background-color:rgb(46, 46, 46);
+
+    .header {
+        background-color: rgb(46, 46, 46);
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         width: auto;
-        height: 45px;
-        font-family: Arial, Helvetica, sans-serif;
-        
-        }
-
-    
-    .imagenfondoP{
-       display: none;
+        height: 85px;
     }
-    
 
-    .imagenfondo{
+
+
+
+    .imagenfondoP {
+        display: none;
+    }
+
+
+    .imagenfondo {
         background-image: url(../vid/Live\ music\ concert.mp4);
         width: 100%;
         height: 50%;
         display: flex;
         justify-content: center;
     }
-    
-    video{
+
+    video {
         width: 100%;
     }
- 
-    footer h6{
+
+    footer h6 {
         display: block;
     }
-    .imagenfondo h1{
+
+    .imagenfondo h1 {
         color: white;
         position: absolute;
         width: 100%;
         text-align: center;
-        font-size: 190px; 
-       margin-top: 20%;
+        font-size: 190px;
+        margin-top: 20%;
     }
 
-   
-    h2{
-       height: 60px;
-   }
 
-  
-   }
+    h2 {
+        height: 60px;
+    }
 
+
+}
