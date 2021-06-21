@@ -1,4 +1,3 @@
-/*todos los elemetos*/
 * {
   box-sizing: border-box;
   margin: 0%;
@@ -122,43 +121,13 @@ a:hover {
   font-size: 10px;
 }
 
-/*responde a la class "header" display flex(para que este flexible la caja y funcional se pueda modificar con otros estilos de flex)
-..flex direction row(para que este en horizontal)
-..justify content space arround(distribuye el espacio entre los items. sooace arround para ue haya espacio)
-..heigt(altura del area del elemento)*/
-/* .header {
-  background-color: rgb(46, 46, 46);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: auto;
-  height: 45px;
-} */
 
-/*cuando pasas el mouse por  arriba*/
+
 div a:hover {
   color: white;
 }
 
-/*..width (anchura del area del elemento)*/
-/* .opciones {
-  display: flex;
-  height: 100%;
-  justify-content: space-around;
-  width: 100%;
-  align-items: center;
-  font-size: 10px;
-} */
 
-/* .logo {
-  color: hsl(350, 75%, 81%, 0.8);
-  margin: 5%;
-  size: 20%;
-} */
-
-/*titulo, justify content eje x
-align items eje y*/
 h2 {
   color: white;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -206,38 +175,6 @@ body {
   background-color: rgba(245, 145, 161, 0.8);
 }
 
-/*footer ENTERO. logo,palabras, etc...*/
-/* footer {
-  background-color: rgb(46, 46, 46);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: auto;
-  height: 45px;
-} */
-
-
-/*estilo del footer*/
-/* .opciones {
-  display: flex;
-  height: 100%;
-  justify-content: space-around;
-  width: 100%;
-  align-items: center;
-  font-size: 10px;
-
-
-} */
-
-/*logo en particular*/
-/* .logo {
-  color: hsl(350, 75%, 81%, 0.8);
-  margin: 40%;
-  size: 20%;
-} */
-
-/*palabras del footer*/
 
 .sylesHref {
   text-decoration: none;
@@ -247,8 +184,17 @@ body {
 }
 
 @media (min-width: 768px){
+  
+  .bloquegenero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
   .generoindividual{
-    width: 45%;
+    width: 100%;
   }
   .opciones li a {
     font-size: 20px;
@@ -257,16 +203,6 @@ body {
 }
 
 @media (min-width: 1024px) {
-
-  /* .header {
-    background-color: rgb(46, 46, 46);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: auto;
-    height: 45px;
-    justify-content: space-around;
-  } */
 
   .header {
     background-color: rgb(46, 46, 46);

@@ -13,6 +13,8 @@ fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/'+idArt
     nombre.innerHTML += artista.name
     let imagen = document.querySelector ('.imagenmac')
     imagen.innerHTML += '<img src="'+artista.picture_big+'" alt="'+artista.name+'"></img>'
+    let titulo = document.querySelector('.titulo')
+        titulo.innerHTML += data.name
 })
 
 fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/'+idArtist+'/albums')

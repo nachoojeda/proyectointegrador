@@ -25,7 +25,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/" + idGe
         let artistas = data.data
         let listaArtistas = document.querySelector('.listaArtistas')
         for (let i = 0; i < 10; i++) {
-        listaArtistas.innerHTML +='<a href="detalleArtista.html?id='+artistas[i].id+'"><li class="artistasG">'+ artistas[i].name +'<br><img src="'+ artistas[i].picture_big +'" alt="'+ artistas[i].name +'"></li></a>'
+        listaArtistas.innerHTML +='<a href="detalleArtista.html?id='+artistas[i].id+'"class="artistasG"><img class="fotoDG" src="'+ artistas[i].picture_big +'" alt="'+ artistas[i].name +'"><br><p>'+ artistas[i].name +'</p></a>'
         
 
         }

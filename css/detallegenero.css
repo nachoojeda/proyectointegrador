@@ -3,13 +3,10 @@
   box-sizing: border-box;
   margin: 0%;
   padding: 0%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-/*responde a la class "header" display flex(para que este flexible la caja y funcional se pueda modificar con otros estilos de flex) 
-..flex direction row(para que este en horizontal)
-..justify content space arround(distribuye el espacio entre los items. sooace arround para ue haya espacio) 
-..heigt(altura del area del elemento)*/
+
 .header {
   background-color: rgb(46, 46, 46);
   display: flex;
@@ -42,7 +39,7 @@ div a:hover{
   
   h2 {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: black;
     height: 60px;
     text-align: center;
@@ -51,32 +48,46 @@ div a:hover{
     align-items: center;
   }
 
-  .cuerpo{
-    height: 72vh;
-    margin: 40px;
-  }
   
   
-  body {
+body {
     background-color: hsl(350, 75%, 81%, 0.8);
   }
 
-  .estilosImagen {
-    display: flex;
-    align-items: center;
-    margin: auto;
-    width: 300px;
+  .fotoDG {
+    border: solid 20px white;
+    width: 100%;
+  }
   
-
+  .contenedor {
+    padding-left: 100px;
+    padding-right: 100px;
   }
- 
-
-  .descripcion{
-    margin-top: 40px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-
+  
+  .artistasG {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    text-decoration: none;
   }
+  
+p {
+    display: flex;
+    justify-content: center;
+    color: rgb(46, 46, 46);
+    font-size: 35px;
+    text-decoration: none;
+  }
+  
+  .artistasG:hover {
+    background-color: rgba(245, 145, 161, 0.8);
+  }
+
+
+  
   
   
   /*footer ENTERO. logo,palabras, etc...*/
@@ -122,29 +133,26 @@ footer {
     body {
       background-color: rgb(250, 165, 179);
     }
-  
-    .cuerpo{
-      height: 90vh;
-    }
 
 
-    .contenedorimagen {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100px;
-      margin-left: 450px;
-      width: 300px;
-      height: 300px;
       
+    
+      .fotoDG{
+    border: solid 20px white;
+    width: 100%;
     }
-
-    .descripcion{
-      margin-top: 100px;
-      text-align: center;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 30px;
-  
+    
+    .listaArtistas{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+      }
+    
+    .artistasG{
+      display: flex;
+      flex-wrap: wrap;
+      width: 30%;
     }
    
     
@@ -156,13 +164,7 @@ footer {
       align-items: center;
       width: auto;
       height: 45px;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
   
-    .bloquegenero {
-      display: flex;
-      align-items: center;
-      padding: 30px;
-      justify-content: space-around;
-    }
   }
