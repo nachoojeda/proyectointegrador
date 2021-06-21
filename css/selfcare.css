@@ -123,6 +123,7 @@ img{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 40%;
 }
 
 .parrafo{
@@ -137,9 +138,11 @@ img{
 
 h1{
     color: white;
-    font-size: 500%;
+    font-size: 40px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 50px;
+    margin-top: 20px;
 }
 h2{
     color: white;
@@ -198,7 +201,7 @@ h2{
     
     p{
         padding: 30px;
-    }
+        }
         footer{
         background-color:rgb(46, 46, 46);
         display: flex;
@@ -210,13 +213,22 @@ h2{
         
         }
 
+        .cuerpo{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        
+
         h1{
-            font-size: 800%;
+            font-size: 80px;
         }
         
         
         h2{
-            font-size: 40px;
+            font-size: 30px;
         }
         .header{
             background-color:rgb(46, 46, 46);
