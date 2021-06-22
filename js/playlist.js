@@ -22,7 +22,7 @@ else{
 
         let eliminar = document.querySelector('.boton');
         eliminar.addEventListener('click',function(){
-            
+            window.localStorage.clear('playlist')
             
         })
     })
