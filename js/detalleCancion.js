@@ -19,7 +19,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/" + idTr
         imagen.innerHTML += '<img src="' + data.album.cover_big + '" alt="' + data.artist.name + '">'
 
         let detalleCancion = document.querySelector('.parrafo')
-        detalleCancion.innerHTML += '<h1>' + data.title + '</h1><h2>From <a href="detalleAlbum.html?id=' + data.album.id + '">' + data.album.title + '</a></h2><h2 class="by">By <a href="detalleArtista.html?id=' + data.artist.id + '">' + data.artist.name + '</a></h2>'
+        detalleCancion.innerHTML += '<h1>' + data.title + '</h1><h2>From <a href="detalleAlbum.html?id=' + data.album.id + '">' + data.album.title + '</a></h2><h2 class="by">By <a href="detalleArtista.html?id=' + data.artist.id + '">' + data.artist.name + '</a></h2> <iframe title="deezer-widget" src="https://widget.deezer.com/widget/auto/track/'+data.id+'" width="1000" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>'
     })
 
 let playlist = []
