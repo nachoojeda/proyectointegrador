@@ -18,18 +18,20 @@ else{
     })
     .then(function(data){
         console.log(data);
-        listaCanciones.innerHTML += '<a href="detalleCancion.html?id='+data.id+'"><li><i class="fas fa-heart"></i>'+data.title+'</li></a> <button class="boton">Eliminar de la playlist</button>'
+        listaCanciones.innerHTML += `<a href="detalleCancion.html?id=${data.id}"><li><i class="fas fa-heart"></i>${data.title}</li></a> 
+        `
+        //<button class="boton">Eliminar de la playlist</button>
 
-        let eliminar = document.querySelector('.boton');
-        eliminar.addEventListener('click',function(){
-            window.localStorage.clear('playlist')
+        // let eliminar = document.querySelector('.boton');
+        // eliminar.addEventListener('click',function(){
+        //     window.localStorage.clear('playlist')
             
-        })
+        // })
     })
     }
 }
-let clear = document.querySelector('.clear')
-clear.addEventListener('click', function(){
-    window.localStorage.clear('playlist')
-})
+// let clear = document.querySelector('.clear')
+// clear.addEventListener('click', function(){
+//     window.localStorage.clear('playlist')
+// })
 

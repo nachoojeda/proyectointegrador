@@ -16,7 +16,6 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/artist?
         let listaArtistas = document.querySelector('.artistas')
 
         for (let i = 0; i < artista.length; i++) {
-
             listaArtistas.innerHTML += `<nav class="artista"><nav class="carta"><a href="detalleArtista.html?id=${artista[i].id}"><img class="imgl" src="${artista[i].picture_big}" alt="${ artista[i].name }"> </a> </nav><h3><a href="detalleArtista?id=${artista[i].id}">${ artista[i].name }</a></h3></nav></nav>`
         }
     })

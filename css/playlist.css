@@ -4,6 +4,10 @@
   padding: 0%;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+a{
+  text-decoration: none;
+ 
+}
 
 .logo a:hover {
   color: white;
@@ -112,11 +116,12 @@ body {
 h1 {
   color: white;
   background-color: rgb(31, 31, 31, 0.94);
-  height: 60px;
+  height: 80px;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 li {
@@ -166,7 +171,16 @@ footer h6 {
   text-align: center;
   color: white;
 }
-
+li{
+ color: rgb(46, 46, 46); ;
+}
+li:hover
+{
+  color: white;
+}
+li{
+  text-align: center;
+}
 @media(min-width: 1024px) {
 
   
