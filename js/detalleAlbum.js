@@ -30,7 +30,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/" + idAl
         //console.log(albumS);
         let cancionesAlbum = document.querySelector('.tracklist')
         for (let i = 0; i < albumS.length; i++) {
-            cancionesAlbum.innerHTML += '<li>' + albumS[i].title + '</li>' //concatenar
+            cancionesAlbum.innerHTML += `<li><a href="detalleCancion.html?id=${albumS[i].id}">${albumS[i].title}</a></li>` //concatenar
         }
 
 

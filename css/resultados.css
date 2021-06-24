@@ -1,15 +1,18 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
 .sociales a {
     font-size: 25px;
 }
+
 .logo a:hover {
     color: white;
 }
+
 .sociales {
     display: flex;
     list-style: none;
@@ -100,18 +103,22 @@ a:hover {
     align-items: center;
     font-size: 10px;
 }
-body{
-    background-color:  hsl(350, 75%, 81%, 0.8);
+
+body {
+    background-color: hsl(350, 75%, 81%, 0.8);
 }
-a{
+
+a {
     color: rgb(46, 46, 46);
     text-decoration: none;
 }
-p{
-    color:rgb(46, 46, 46) ;
+
+p {
+    color: rgb(46, 46, 46);
 }
-header{
-    background-color:rgb(46, 46, 46);
+
+header {
+    background-color: rgb(46, 46, 46);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -120,39 +127,49 @@ header{
     height: 45px;
 }
 
-.titulo{
-    background-color: rgba(216, 46, 75, 0.3);
+.titulo {
+    background-color: rgb(31, 31, 31, 0.94);
     text-align: center;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    
+   
+    margin-top: 3%;
     color: white;
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     width: 100%;
-    
+
 }
 
-h2{
+.resultado{
+    background-color: rgb(31, 31, 31, 0.94);
+    text-align: center;
+    margin-bottom: 3%;
+
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    width: 100%;
+}
+
+h2 {
     background-color: rgb(46, 46, 46);
     color: white;
     height: 70px;
     display: flex;
-   justify-content: center;
-   align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
-.logo{
+.logo {
     margin: 8px;
-    color:  hsl(350, 75%, 81%, 0.8);
+    color: hsl(350, 75%, 81%, 0.8);
     font-size: 28px;
-    
+
 }
 
 
 
 
-.cancion{
+.cancion {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -160,7 +177,8 @@ h2{
     padding: 20px;
     width: 100%;
 }
-.album{
+
+.album {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -168,7 +186,8 @@ h2{
     padding: 20px;
     width: 100%;
 }
-.artista{
+
+.artista {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -176,66 +195,74 @@ h2{
     padding: 20px;
     width: 100%;
 }
-.cancion:hover{
+
+.cancion:hover {
     background-color: rgba(245, 145, 161, 0.8);
 }
-.cancion h3 a:hover{
+
+.cancion h3 a:hover {
     color: white;
 }
-.album h3 a:hover{
+
+.album h3 a:hover {
     color: white;
 }
-.artista h3 a:hover{
+
+.artista h3 a:hover {
     color: white;
 }
-.album:hover{
+
+.album:hover {
     background-color: rgba(245, 145, 161, 0.8);
 }
-.artista:hover{
+
+.artista:hover {
     background-color: rgba(245, 145, 161, 0.8);
 }
- a:hover{
+
+a:hover {
     color: white;
-    
+
 }
-.producto p{
+
+.producto p {
     font-size: 15px;
     color: gb(46, 46, 46);
 }
 
-.opciones li a{
-    text-decoration:none;
-    padding:0;
-    color:white;
+.opciones li a {
+    text-decoration: none;
+    padding: 0;
+    color: white;
 }
 
-.opciones li a:hover{
+.opciones li a:hover {
     color: hsl(350, 75%, 81%, 0.8);
 }
 
 
-.opciones li{
+.opciones li {
     list-style-type: none;
 }
 
 .opciones {
-    display:flex;
+    display: flex;
     justify-content: space-around;
     width: 100%;
     align-items: center;
     font-size: 10px;
 }
 
-.productos{
+.productos {
     display: flex;
-   flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
-.producto p{
+.producto p {
     font-size: 15px;
 }
 
-.producto{
+.producto {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -244,157 +271,171 @@ h2{
     width: 100%;
 }
 
-.producto a{
+.producto a {
     text-decoration: none;
 }
 
-.producto h3 a{
+.producto h3 a {
     text-decoration: none;
-    
+
 }
-.producto h3 a:hover{
+
+.producto h3 a:hover {
     color: white;
 }
 
-.lista{
-    background-color: hsl(350, 75%, 81%, 0.8); 
+.lista {
+    background-color: hsl(350, 75%, 81%, 0.8);
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-.carta{
+.carta {
     width: 100%;
 }
 
-.imgl{
-    border: solid 20px white; 
+.imgl {
+    border: solid 20px white;
     width: 100%;
 }
 
-.producto a:hover{
+.producto a:hover {
     color: white;
-    
+
 }
 
-.producto:hover{
+.producto:hover {
     background-color: rgba(245, 145, 161, 0.8);
 }
-footer{
-    background-color:rgb(46, 46, 46);
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: space-between;
-   height: 45px;
-   width: 100%;
+
+footer {
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 45px;
+    width: 100%;
 }
 
-footer h6{
+footer h6 {
     text-align: center;
-    color:white;
+    color: white;
     display: none;
 }
 
-.columna{
+.columna {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-@media(min-width:768px){
-    .producto{
+@media(min-width:768px) {
+    .producto {
         width: 50%;
     }
-    .productos{
+
+    .productos {
         display: flex;
         justify-content: center;
     }
-    .titulo{
-        font-size: 60px;
-    }
-    .opciones li a{
+
+    .opciones li a {
         font-size: 20px;
     }
-    .canciones{
+
+    .canciones {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         padding: 10px;
         width: 100%;
-       
+
     }
-    .albums{
+
+    .albums {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         padding: 10px;
         width: 100%;
-       
-    }.artistas{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding: 10px;
-        width: 100%;
-       
+
     }
-    .cancion{
+
+    .artistas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 10px;
+        width: 100%;
+
+    }
+
+    .cancion {
         padding: 20px;
         width: 50%;
-        
-     }
-     .album{
+
+    }
+
+    .album {
         padding: 20px;
         width: 50%;
-        
-     }.artista{
+
+    }
+
+    .artista {
         padding: 20px;
         width: 50%;
-        
-     }
+
+    }
 }
 
-@media(min-width:1024px){
-.producto{
-    width: 30%;
-}
-h1{
-    font-size: 60px;
-    
-  /* background-image: url(https://ak.picdn.net/shutterstock/videos/4863305/thumb/1.jpg);   */
-    
-}
-.header {
-    background-color: rgb(46, 46, 46);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: auto;
-    height: 85px;
-}
-.cancion{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    width: 30%;
-}
-.album{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    width: 30%;
-}
-.artista{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    width: 30%;
-}
+@media(min-width:1024px) {
+    .producto {
+        width: 30%;
+    }
+
+    /* h1 {
+        font-size: 60px;
+
+        /* background-image: url(https://ak.picdn.net/shutterstock/videos/4863305/thumb/1.jpg);   
+
+    } */
+
+    .header {
+        background-color: rgb(46, 46, 46);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        height: 85px;
+    }
+
+    .cancion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        width: 30%;
+    }
+
+    .album {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        width: 30%;
+    }
+
+    .artista {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        width: 30%;
+    }
 }

@@ -1,4 +1,4 @@
-let recuperoStorage = localStorage.getItem('playlist');
+let recuperoStorage = localStorage.getItem('playlist'); //obtenes de localstorage la propiedad playlist
 let playlist = JSON.parse(recuperoStorage); // pasarlo a JSON para manipularlo
 let listaCanciones = document.querySelector('.playlist') ;
 console.log(playlist) ;
@@ -18,20 +18,9 @@ else{
     })
     .then(function(data){
         console.log(data);
-        listaCanciones.innerHTML += `<a href="detalleCancion.html?id=${data.id}"><li><i class="fas fa-heart"></i>${data.title}</li></a> 
+        listaCanciones.innerHTML += `<a href="detalleCancion.html?id=${data.id}"><li><i class="fas fa-heart"></i> ${data.title}</li></a> 
         `
-        //<button class="boton">Eliminar de la playlist</button>
-
-        // let eliminar = document.querySelector('.boton');
-        // eliminar.addEventListener('click',function(){
-        //     window.localStorage.clear('playlist')
-            
-        // })
     })
     }
 }
-// let clear = document.querySelector('.clear')
-// clear.addEventListener('click', function(){
-//     window.localStorage.clear('playlist')
-// })
 
