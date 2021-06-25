@@ -12,6 +12,18 @@ resultado.innerHTML += `"${busqueda}"`
 
 let listas = document.querySelector('.listas')
 
+let formulario = document.querySelector('form')
+let formu =document.getElementById('formu')
+console.log(formu);
+formulario.addEventListener('submit', function(e){
+    e.preventDefault();
+    if(formu.value === ''){
+       alert('EL CAMPO NO PUEDE ESTAR VACIO')
+     } else{
+        formulario.submit();
+    }
+    })
+
 fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/artist?q=" + busqueda) //Cuando llamo a busqueda le agrego a la url del endpoint especifico lo que atrape
 
     .then(function (response) {
@@ -21,9 +33,16 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/artist?
         console.log(data);
         let artista = data.data
         let listaArtistas = document.querySelector('.artistas')
-        if(artista.length == 0){
+        if(artista.length == 0 ){
             titulo.innerHTML = '¡La cancion que quisiste buscar no existe!'
             resultado.innerHTML = ''
+            listas.style.height = '80vh'
+            listas.style.color ='rgb(46, 46, 46)'
+            listas.style.fontSize = '60px'
+            listas.style.display = 'flex'
+            listas.style.alignItems = 'center'
+            listas.style.justifyContent = 'center'
+            
             listas.innerHTML = '<h1>¡No se encontraron resultados!</h1>'
         }
         for (let i = 0; i < artista.length; i++) {

@@ -2,7 +2,17 @@ let recuperoStorage = localStorage.getItem('playlist'); //obtenes de localstorag
 let playlist = JSON.parse(recuperoStorage); // pasarlo a JSON para manipularlo
 let listaCanciones = document.querySelector('.playlist') ;
 console.log(playlist) ;
-
+let formulario = document.querySelector('form')
+let formu =document.getElementById('formu')
+console.log(formu);
+formulario.addEventListener('submit', function(e){
+    e.preventDefault();
+    if(formu.value === ''){
+       alert('EL CAMPO NO PUEDE ESTAR VACIO')
+     } else{
+        formulario.submit();
+    }
+    })
 if(recuperoStorage == null || recuperoStorage == "[]"){
     playlist = [] ;
     listaCanciones.innerHTML += '<h1 class="noHay"> ¡No hay canciones! </h1>' 

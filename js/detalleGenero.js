@@ -5,6 +5,17 @@ console.log(queryString);
 console.log(datos);
 console.log(idGenre);
 
+let formulario = document.querySelector('form')
+let formu =document.getElementById('formu')
+console.log(formu);
+formulario.addEventListener('submit', function(e){
+    e.preventDefault();
+    if(formu.value === ''){
+       alert('EL CAMPO NO PUEDE ESTAR VACIO')
+     } else{
+        formulario.submit();
+    }
+    })
 fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/" + idGenre)
     .then(function (response) {
         return response.json();
