@@ -1,21 +1,10 @@
 let queryString = location.search; //Atrapar lo que etsa despues del html
 let datos = new URLSearchParams(queryString); //Traduccion
-let idTrack = datos.get('id');//Atrapando la igualdad de la palabra
+let idTrack = datos.get('id'); //Atrapando la igualdad de la palabra
 console.log(queryString);
 console.log(datos);
 console.log(idTrack);
 
-let formulario = document.querySelector('form')
-let formu =document.getElementById('formu')
-console.log(formu);
-formulario.addEventListener('submit', function(e){
-    e.preventDefault();
-    if(formu.value === ''){
-       alert('EL CAMPO NO PUEDE ESTAR VACIO')
-     } else{
-        formulario.submit();
-    }
-    })
 
 fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/" + idTrack)
     .then(function (response) {
