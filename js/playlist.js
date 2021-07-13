@@ -6,12 +6,13 @@ formulario.addEventListener('submit', function (e) {
     if (formu.value === '') {
         alert('EL CAMPO NO PUEDE ESTAR VACIO')
     } else {
-        formulario.submit();
+        this.submit();
     }
 })
 
 let recuperoStorage = localStorage.getItem('playlist'); //obtenes de localstorage la propiedad playlist
 let playlist = JSON.parse(recuperoStorage); // pasarlo a JSON para manipularlo
+
 let listaCanciones = document.querySelector('.playlist');
 console.log(playlist);
 

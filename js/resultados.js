@@ -16,9 +16,10 @@ formulario.addEventListener('submit', function (e) {
 let querystring = location.search // Atrapo todo lo que esta despues del html
 let querystringobj = new URLSearchParams(querystring); // Lo traduzco para poder manipularlo
 let busqueda = querystringobj.get("search"); //Atrapo la igualdad de la palabra, atrapando el valor 'search' de la variable querystringobj (solo lo que va despues del =)
-
-let titulo = document.querySelector('.titulo')
+console.log(querystring);
 console.log(busqueda);
+let titulo = document.querySelector('.titulo')
+
 
 let resultado = document.querySelector('.resultado')
 titulo.innerHTML += `Resultado de busqueda`
